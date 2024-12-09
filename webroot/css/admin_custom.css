@@ -1,0 +1,182 @@
+.form-error{
+    border: #D01616 1px solid;
+}
+.error-message{
+	color: #D01616;	
+}
+/* table pagination in footer */
+.paginate_button{
+	color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;	
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+
+}
+a.paginate_button{
+    text-decoration: blink;
+}
+a.paginate_button.current,a.paginate_button:hover{
+	background: #eee;
+    border-color: #dddddd;
+    color: #333;
+}
+
+/* actions pagination */
+
+.dataTables_wrapper .actions{
+    height: 31px;
+}
+.dataTables_wrapper .actions .actions-left{
+    width: 50%;
+    float: left;
+}
+.form .form-actions{
+    padding: 10px;
+}
+.dataTables_paginate>span>span{
+    display: initial;
+    float: left;
+    position: relative;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 14px;
+}
+.compname {
+	 font-size: 200%;
+	 background-color:#eee;
+}
+
+#table-example{
+    width: 100% !important;
+}
+
+.widget-h200 {
+    max-height: 200px;
+    overflow-y: scroll !important;
+}
+.yellow{
+  background-color: rgb(253, 192, 0) !important;
+}
+.applyonline-viewmain .rowcat .col-md-6{    
+    border-bottom: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.applyonline-viewmain .rowcat{
+    border-top: 1px solid #c1c1c1;   
+}
+.applyonline-viewmain .rowcat .col-md-6:first-child{
+    border-left: 1px solid #c1c1c1;
+}
+.applyonline-viewmain .rowcat .control-label{
+    text-align: right;
+}
+.applyonline-viewmain .rowcat1 .row{
+    border: 1px solid #c1c1c1;
+    padding: 7px;
+}
+.applyonline-viewmain .form-group{
+    padding-top: 5px;
+    margin-bottom: 7px;
+}
+.applyonline-viewmain label{
+    font-weight: 600;
+    font-size: 14px; 
+    position: relative;
+    padding-right: 10px;
+}
+.applyonline-viewmain label:after {
+    content: ":";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.applyonline-viewmain .nodots:after,.applyonline-viewmain .attach-lable:after {
+    display: none;
+}
+.applyonline-viewmain .clear-both:after,.applyonline-viewmain .clear-both:before {
+    display: table;
+    content: "";
+    clear: both;
+}
+.applyonline-viewmain h4{
+    font-weight: 600;
+    font-size: 1em;
+}
+.applyonline-viewmain .next.btn.btn-primary.btn-lg.mb-xlg.cbtnsendmsg a,.applyonline-viewmain .next.btn.btn-primary.btn-lg.mb-xlg.cbtnsendmsg a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.applyonline-viewmain {
+    margin-top: 30px;
+}
+.applyonline-viewmain .portlet-body {
+    border: 1px solid #000;
+    padding:15px;
+}
+.applyonline-viewmain table tr td {
+    padding: 10px;
+}
+.applyonline-viewmain .portlet-body h4 {
+    display: table;
+    background: #71bf57;
+    margin: 0; 
+    padding: 5px;
+    color: #fff;
+}
+
+.applyonline-viewmain .greenbox {
+    border-bottom: 1px solid #ffcb29;
+    margin-top: 20px;
+}
+.greenbox:first-child {
+    margin-top: 0;
+}
+.applyonline-viewmain .cbtnsendmsg {
+    float: right;
+    margin-bottom: 0 !important;
+}
+.applyonline-viewmain .attach-lable{
+    padding: 0;
+}
+.applyonline-viewmain img {
+    border:1px solid #c1c1c1;
+    width:250px;
+}
+.applyonline-viewmain .attch-doc{
+    text-align: center;
+}
+
+.scrollnotes{
+    height: 200px;
+    overflow-y: scroll;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.no_padding{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 15px;
+}
+.portlet-body .lead_cold_calling,.portlet-body .lead_reference, .portlet-body .lead_other,.portlet-body .reason_lead{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 15px;
+}
+
+.font_22{font-size: 22px;}
+.remove_leaddoc i:hover{
+    color:red;
+    cursor: pointer;
+}

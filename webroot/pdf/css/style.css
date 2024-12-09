@@ -1,0 +1,185 @@
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+// ==========================================================================
+// Print styles.
+
+@media print {
+  *,
+  *:before,
+  *:after {
+  	content:"";
+  	display:table;
+    background: transparent !important;
+  }
+  h1,h2,h3,h4,h5 {
+  	color:#FDC426;
+  }
+}
+body{font-size: 14px; font-weight: 200;    line-height: 1.42857143;}
+p {
+    margin: 0 0 10px;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.mainbox { width: 600pt; max-width: 100%; margin: 0 auto; padding: 10px; }
+.mainboxlast { width: 600pt; max-width: 100%; margin: 0 auto; padding: 0px; }
+.row { margin: 0; }
+.mainbox header p { text-align: right; }
+.mainbox footer p { padding: 10px; }
+.mainbox header span { color: #FF0000; }
+.red { color: #FF0000; }
+.green { color: #70B446; }
+.mainbox h1 { color: #FDC426; font-size: 20px !important; font-weight: 500; }
+.width100 { width: 100%; }
+.border-top { border-top: 2px solid #000; }
+.border-top-yellow { border-top: 2px solid #FDC426; }
+.nopadding { padding: 0; }
+.nopaddingright { padding-right: 0; }
+.padtop5 { padding-top: 5px; }
+.margintop20 { margin-top: 20px; }
+.thcustom th { background: none; color: #000; text-align: center; }
+
+/* table responsive CSS */
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { width: 100%; border-collapse: collapse; }
+
+/* Zebra striping */
+.t1 tr:nth-of-type(odd) { background: #eee; }
+.t2 tr:nth-of-type(odd) { background: none; }
+.t3 tr:nth-of-type(odd) { background: none; }
+.t4 tr:nth-of-type(odd) { background: none; }
+th { background: #333; color: white; font-weight: bold; }
+.t1 td, .t1 th { padding: 6px; border: 1px solid #ccc; }
+.t2 td, .t2 th { padding: 6px; border: 1px solid #ccc; }
+.t3 td, .t3 th { padding: 6px; border: none; border-top: 2px solid #FDC426; }
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width:760px), (min-device-width:768px) and (max-device-width:1024px) {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { display: block; }
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.t1 thead tr { position: absolute; top: -9999px; left: -9999px; }
+	.t2 thead tr { position: absolute; top: -9999px; left: -9999px; }
+	.t3 thead tr { position: absolute; top: -9999px; left: -9999px; }
+	.t4 thead tr { position: absolute; top: -9999px; left: -9999px; }
+	.t1 tr { border: 1px solid #ccc; }
+	.t2 tr { border: 1px solid #ccc; }
+	.t3 tr { border: none; }
+	.t4 tr { border: none; }
+	.t1 td {		/* Behave  like a "row" */
+	border: none; border-bottom: 1px solid #eee; position: relative; padding-left: 50%; font-size: 12px; }
+	.t2 td {		/* Behave  like a "row" */
+	border: none; border-bottom: 1px solid #eee; position: relative; padding-left: 50%; font-size: 12px; }
+	.t3 td {		/* Behave  like a "row" */
+	position: relative; font-size: 12px; width: 33.33%; float: left; }
+	td:before {		/* Now like a table header */
+	position: absolute;		/* Top/left values mimic padding */ top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap; }
+
+	/*
+	Label the data
+	*/
+	.t1 td:nth-of-type(1):before { content: "Sr."; }
+	.t1 td:nth-of-type(2):before { content: "Particulars"; }
+	.t1 td:nth-of-type(3):before { content: "Units"; }
+	.t1 td:nth-of-type(4):before { content: "Recommended by AHA!"; }
+	.t1 td:nth-of-type(5):before { content: "Maximum Value"; }
+
+	/*
+		Label the data
+		*/
+	.t2 td:nth-of-type(1):before { content: "Sr."; }
+	.t2 td:nth-of-type(2):before { content: "Month"; }
+	.t2 td:nth-of-type(3):before { content: "Energy Generated"; }
+	.t2 td:nth-of-type(4):before { content: "Saving"; }
+	.nopaddingright { padding: 0; }
+}
+.customfooter { background-color: #000; margin-top: 35px; }
+.customfooter p { text-align: center; padding: 5px !important; color: #FDC426; }
+.notoppad {
+    padding-top:0; 
+}
+@media print {
+	.pagebrack { page-break-before: always; }
+}
+
+@page { margin: 20px 50px 20px 50px; }
+    #footer { 
+    	position: fixed; left: 0px; bottom: -10px; 
+    	right: 0px; 
+    	height: 40px; 
+    	border-top: 1px solid #f2f2f2;
+    	text-align: center;
+    	padding-top: 8px;
+    	color: #ccc;
+    	
+    }
+    #footer .page:after { content: counter(page); }
+
+.page-break{
+	page-break-after: always;
+}
+
+.nk_table {
+	width:100%;
+	padding:5px;
+	border-collapse: collapse;
+}
+.nk_table td ul {
+	padding:0;
+	margin:0;
+}
+.nk_table td ul li {
+	list-style:none;
+	display:inline-block;
+	margin: 0;
+	padding: 0;
+	width: 30px;
+}
+.nk_table th {
+	padding:10px;
+	border-bottom:1px solid #4f81bd;
+	text-align:left;
+}
+.nk_table td {
+	text-align:left;
+	padding:10px;
+	background:#FFFFFF;
+	border-bottom:1px solid #4f81bd;
+}
+.nk_table td.last, .nk_table th.last {
+	border:none;
+}
+.footer-section{
+	margin-top:120px;
+}
+.alone-title{
+	font-size: 35px !important;
+	color:#FDC426;
+	text-align: center;
+}
+.align-center{
+	text-align: center;
+}
+.mbottom20{
+	margin-bottom: 20px;
+}
+.custom-table-style{
+	border:0 !important;
+}
+.custom-table-style td{
+	border: 0 !important;
+	border-bottom:1px solid lightgrey !important;
+}

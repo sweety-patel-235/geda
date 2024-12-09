@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^ index.php [L]
+RewriteRule robots.txt error400 [L]
+<IfModule mod_headers.c> 
+	Header set X-XSS-Protection "1; mode=block"
+	Header set X-Content-Type-Options "nosniff"
+	Header set X-Frame-Options "SAMEORIGIN"
+	#Header set Content-Type "text/html; charset=utf-8"
+	Header set X-Robots-Tag "noindex"
+	Header always edit Set-Cookie (.*) "$1; HttpOnly"
+	Header always edit Set-Cookie (.*) "$1; Secure"
+	Header always edit Set-Cookie (.*) "$1;SameSite=Strict"
+</IfModule>

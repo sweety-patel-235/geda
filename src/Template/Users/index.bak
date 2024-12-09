@@ -1,0 +1,249 @@
+<div role="main" class="main">
+    <div class="slider-container" style="margin-bottom: 50px;">
+        <div class="slider" id="revolutionSlider" data-plugin-revolution-slider data-plugin-options='{"startheight": 700}'>
+            <ul>
+                <li data-transition="fade" data-slotamount="13" data-masterspeed="300">
+
+                    <img src="/img/frontend/banner.jpg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" alt="">
+
+                    <div class="tp-caption main-label sft stb" data-x="35" data-y="120" data-speed="300" data-start="1500" data-easing="easeOutExpo" style="line-height:85px;"><span style="color:#FF9933;">GET Control</span>
+                        <br><span style="color:#FFFFFF;">over energy costs</span>
+                        <br><span style="color:#138808;">with India’s #1 Solar Helper</span>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8">
+                <h2>How it works to find a Solar <strong>Installer and get Quotes </strong></h2>
+                <div class="nk_feature">
+
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="heading-primary">Generate a solar estimated cost and capacity through AHA Solar Calculator.</h4>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="heading-primary">Know Financial Incentive, if any, in your region.</h4>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="heading-primary">Select installers from the list of solar installers identified based on your requirement.</h4>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="heading-primary">Your  selected installer will contact you.</h4>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="heading-primary">AHA ensures that you  get the best Solar Installation Experience.</h4>
+                        </div>
+                    </div>
+                </div>
+                <hr class="tall">
+                <h2>How it works for <strong>Solar Installers </strong></h2>
+                <div class="nk_feature">
+
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="heading-primary">Get high-quality solar leads</h4>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="heading-primary">Do site survey</h4>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="heading-primary">Use cloud technology to access site data to entire team immediately.</h4>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="heading-primary">Enter solar PV system cost details</h4>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="heading-primary">Generate a professional techno-commercial proposals for your customers</h4>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="heading-primary">Project Manager can monitor the progress of the each step i.e. from lead acceptance to commissioning of project remotely through cloud technology.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="col-md-4" style="border:2px solid lightgreen; border-radius:5px; padding-top:10px;">
+                <h2>Start Solar Estimation</h2>
+                <form id="solarcalculator" action="/solarCalculators/solar_calculator" onsubmit="return validateForm();" method="POST">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input id="pac-input" class="form-control" type="text" placeholder="Search Box" style="width:96% !important; margin-left:2% !important">
+                                <div id="myMap"></div>                                   
+                            </div>
+                        </div>               
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label>Landmark </label>
+                                <input type="hidden" readonly="" class="form-control" name="longitude" id="longitude">
+                                <input type="hidden" readonly="" class="form-control" name="latitude" id="latitude">
+                                <input type="text" class="form-control" readonly="" name="landmark" id="landmark">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label>Customer Type *</label>
+                                <?php 
+                                echo $this->Form->select('project_type',$projectTypeArr,array('label' => false,'class'=>'form-control','id'=>'project_type')); ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label>Area Type *</label>
+                                <?php
+                                echo $this->Form->select('area_type',$areaTypeArr,array('label' => false,'class'=>'form-control','id'=>"area_type")); ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label>Rooftop Area *</label>
+                                <input type="text" maxlength="10" class="form-control" name="area" id="area" onkeyup="if(this.value==''){alert('Please enter numeric value');}else if (/\D/g.test(this.value)){ this.value = this.value.replace(/\D/g,'');}">
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label>Average Monthly Bill *</label>
+                                <input type="text" maxlength="10" class="form-control" name="avg_monthly_bill" id="avg_monthly_bill" onkeyup="if(this.value==''){alert('Please enter numeric value');}else if (/\D/g.test(this.value)){ this.value = this.value.replace(/\D/g,'');}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label>Average Monthly Unit Consumed *</label>
+                                <input type="text" maxlength="10" class="form-control" name="energy_con" id="energy_con" onkeyup="if(this.value==''){alert('Please enter numeric value');}else if (/\D/g.test(this.value)){ this.value = this.value.replace(/\D/g,'');}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">                     
+                            <div class="col-md-12">
+                                <label>Backup Type</label>
+                                <?php
+                                echo $this->Form->select('backup_type',$backupTypeArr,array('label' => false,'class'=>'form-control','empty'=>'None','onChange'=>'displayUsageHours(this.value)')); ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12" id="usage_hours_div">
+                                <label>Hours of Usage</label>
+                                <input type="text" maxlength="10" class="form-control" name="usage_hours" id="usage_hours"> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">                        
+                        <div class="col-md-12">
+                            <input type="submit" value="Get Result" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
+                        </div>                        
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDqfWF0vAnh-vajop-4cCralyhh51uT2Mk&libraries=places"></script>
+<script type="text/javascript" src="js/googleMap.js"></script>
+<script type="text/javascript">
+function validateForm() {
+     
+    if ($('#project_type').val() == '') {
+        alert("Please select value for customer type");
+        return false;
+    }
+	 if ($('#area_type').val() == '') {
+        alert("Please enter numeric value for area type");
+        return false;
+    }
+	 if ($('#area').val() == '') {
+        alert("Please enter numeric value for rooftop area");
+        return false;
+    }
+	 if ($('#avg_monthly_bill').val() == '') {
+        alert("Please enter numeric value for average monthly bill");
+        return false;
+    }
+	 if ($('#energy_con').val() == '') {
+        alert("Please enter numeric value for monthly unit consumed");
+        return false;
+    }
+	return true;
+}
+displayUsageHours();
+function displayUsageHours(value) { 
+    if(value > 0) {
+        $('#usage_hours_div').css('display','');
+    } else {
+        $('#usage_hours_div').css('display','none');
+    }
+}
+</script>
