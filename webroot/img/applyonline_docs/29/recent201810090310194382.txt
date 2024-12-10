@@ -1,0 +1,2572 @@
+download csv from admin => project list with search parameter
+/src/Controller/Admin/ProjectsController.php
+/src/Template/Admin/Projects/index.ctp
+/src/Controller/Component/JqdTableComponent.php
+/src/Model/Table/ApplyonlinePaymentTable.php
+/src/Model/Table/PayumoneyTable.php
+
+admin side view list of apply online api and view detail of apply online set to demo server
+/src/Controller/Admin/ApplyOnlinesController.php
+/config/routes.php
+
+modifide code for display transaction id and payment date
+/src/Controller/Admin/ApplyOnlinesController.php
+/src/Controller/ApplyOnlinesController.php
+
+Admin side payutransfer controller has been created for generatehash, passing initial variables to payumoney, success and failure and common function created
+/src/Controller/Admin/PayutransferController.php
+/src/Controller/PayutransferController.php
+
+Admin side sitesurvey popup open when click on project id with all data
+/src/Controller/Component/JqdTableComponent.php
+/src/Controller/Admin/.ProjectsControllerphp
+/src/Template/Admin/Projects/index.ctp
+/src/Template/Admin/ApplyOnlines/index.ctp
+
+https://stackoverflow.com/questions/37958282/php-generate-xlsx
+http://www.iamrohit.in/export-data-in-excel-using-php-and-cakephp/
+https://nik.chankov.net/2009/11/21/cakephp-excel-helper/
+https://blog.mayflower.de/561-Import-and-export-data-using-PHPExcel.html
+https://www.sitepoint.com/generate-excel-files-charts-phpexcel/
+
+/src/Controller/Admin/ProjectsController.php ->date fileter modified for project listing and download csv
+/src/Controller/Admin/ApplyOnlineController.php ->date fileter modified for apply online listing
+/src/Template/Admin/BranchMaster/index.ctp -> drop down has been modified for date.
+
+
+/src/Controller/Admin/Installers -> importInstallerList function date field has been modified.
+
+
+UPDATE `installers` SET `stateflg` = '0' WHERE `installers`.`id` = 1263;
+UPDATE `installers` SET `stateflg` = '0' WHERE `installers`.`id` = 794;
+
+UPDATE `installers` SET `stateflg` = '0' WHERE `installers`.`id` = 197;
+UPDATE `installers` SET `stateflg` = '0' WHERE `installers`.`id` = 781;
+UPDATE `installers` SET `stateflg` = '0' WHERE `installers`.`id` = 543;
+UPDATE `installers` SET `stateflg` = '0' WHERE `installers`.`id` = 35;
+UPDATE `installers` SET `stateflg` = '0' WHERE `installers`.`id` = 1268;
+UPDATE `installers` SET `stateflg` = '0' WHERE `installers`.`id` = 1269;
+
+Admin side from sitesurvey popup download .pdf report of site
+/src/Controller/Component/JqdTableComponent.php
+/src/Model/Table/SiteSurveysTable.php
+/src/Controller/Admin/ProjectsController.php
+/src/Template/Admin/Projects/index.ctp
+/src/Template/Admin/Projects/site_survey.ctp
+/webroot/pdf/css/style.css
+/vendor/PhpExcel
+/src/Controller/Component/PhpExcelComponent.php
+
+
+Add 2 fields for apply online bill, energy consumed
+/src/Template/ApplyOnlines/view.ctp
+/src/Template/ApplyOnlines/index.ctp
+/src/Model/Table/ApplyOnlinesTable.php
+
+Payumoney request for live or test
+/config/bootstrap.php
+/src/Controller/Admin/PayutransferController.php
+/src/Controller/PayutransferController.php
+
+
+
+/src/Template/Email/html/subsidy_approval.ctp has been modified for ahasolar logo
+susidy download pdf and pdf format has been setup
+
+login api modified for state name, merchant key, merchant salt
+/src/Controller/Admin/CustomersController.php
+
+/src/Controller/Admin/ProjectsController.php
+.csv file donwload code converted to .xls file
+/config/bootstrap.php
+constant for merchant id1 and mrchant id2 have been added
+
+/src/Controller/Admin/CustomersController.php
+code for dynamic payumoney url has been done.
+
+
+Testing in ios and android has been done
+csv file donwload code converted to .xls file for project
+.xls file download code has been done for Apply online
+Help feni to css setup for pagination
+
+
+paymentfeebycapacity has been modified for jreda
+
+
+src/Template/Admin/ApplyOnlines/preview_subsidy_approval_letter.ctp
+src/Template/Admin/ApplyOnlines/index.ctp
+src/Template/Admin/Projects/index.ctp
+src/Template/Email/html/application_submission_letter.ctp
+
+common function has been created for site survey listing and pdf files
+
+/src/Template/Element/site_survey.ctp
+/src/Controller/AppController.php
+
+/webroot/pdf/images/tilt_shed.jpg
+/webroot/pdf/images/flat_rcc_roof.jpg
+/webroot/pdf/images/sheet_metal.jpg
+/src/Controller/Admin/Projects.php
+
+
+
+/src/Template/Projects/proposal.ctp
+/src/Template/Projects/execution.ctp
+/src/Template/Projects/commissioning.ctp
+/src/Template/Projects/commercial.ctp
+/src/Template/Projects/dashboard.ctp
+/src/Template/Projects/workorder.ctp
+/src/Template/Projects/sitesurvey.ctp
+/src/Template/Projects/sitesurveylist.ctp
+/src/Template/Element/site_survey.ctp
+
+/src/Template/Admin/Projects/index.ctp
+
+src/Template/Admin/ApplyOnlines/preview_subsidy_approval_letter.ctp
+src/Template/Admin/ApplyOnlines/index.ctp
+src/Template/Admin/Projects/index.ctp
+src/Template/Email/html/application_submission_letter.ctp
+
+/src/Controller/Admin/PayutransferController.php
+/src/Controller/PayutransferController.php
+
+src/Controller/Admin/ApplyOnlinesController.php
+src/Controller/Admin/ProjectsController.php
+src/Controller/Admin/CustomersController.php
+
+/src/Model/Table/SiteSurveysTable.php
+
+
+1) Setting of dropdown custom validation has been done
+2) Guide feni related to commercial  query error
+3) Add code has been modified for selected value in edit
+4) Sitesurvey related code has been downloaded from demo and edited and uploaded to demo server and tested.
+ALTER TABLE `project_survey` CHANGE `month_details` `month_details` LONGTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+/webroot/plugins/bootstrap-fileinput/fileinput.js
+/webroot/plugins/bootstrap-fileinput/fileinput.css
+
+/src/Template/Projects/sitesurvey.ctp
+/src/Template/Projects/sitesurveylist.ctp
+/src/Model/Table/SiteSurveysTable.php
+/src/Controller/ProjectsController.php
+
+There is no such project_id in terms
+There is no such position field in database
+Watermark image, installer paid then banner
+
+Free plan flag, last subscription active flag
+
+
+ALTER TABLE `installer_terms` ADD `position_order` TINYINT NOT NULL AFTER `status`;
+
+
+1) Terms and condition position wise display done
+2) Terms and condition edit with unlink done
+3) Make Default feature has been done
+4) Default text display has been done
+5) Guild feni related redirection issue in commercial issue and check the code.
+6) Discussed report feature with kalpak sir.
+1) Upload work order, execution, commissioning and terms and condition code to demo server. Query has been uploaded on demo server. Testing has been done on demo server.
+2) Working on watermark text.
+1) Watermark text has been done for site survey pdf
+2) Working on banner in header for site survey pdf.
+
+1) Banner has been added in site survey all pdf pages.
+2) API has been modified for listterms and uploadterms for position_order
+3) Download the page for APIs and add new logic and upload demo server.
+4) Discussed the installer payment concept with kalpak sir.
+5) Checked the code for installer subscription.
+
+
+1) Discussed concept of Installer subscription with kalpak sir.
+2) Database table for installer subscription has been created.
+3) Installer company listing has been modified for state.
+4) Popup open from installer listing has been done.
+
+1) Listing of installer subscription inside popup has been done
+2) Installer name display inside popup header done
+1) Add subscription form has been created with installer plans, start date and end date.
+2) Form reset has been done.
+
+
+CREATE TABLE `installer_subscription` (
+  `id` int(11) NOT NULL,
+  `installer_id` int(11) NOT NULL,
+  `transaction_id` varchar(50) NOT NULL,
+  `payment_gateway` varchar(15) NOT NULL,
+  `payment_data` longtext NOT NULL,
+  `payment_status` varchar(10) NOT NULL,
+  `comment` text NOT NULL,
+  `free_flag` tinyint(4) NOT NULL,
+  `plan_name` varchar(255) NOT NULL,
+  `plan_price` float(11,2) NOT NULL,
+  `plan_id` int(11) NOT NULL,
+  `start_date` date NOT NULL,
+  `expire_date` date NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  `created_by` int(11) NOT NULL,
+  `modified_by` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ALTER TABLE `installer_subscription`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `installer_subscription`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `installer_subscription` ADD `user_limit` INT NOT NULL AFTER `plan_id`;
+
+Subscription data
+id
+installer_id
+transaction_id
+payment_data
+payment_status
+comment
+free_flag
+plan_price
+plan_id
+start_date
+expire_date
+created_by
+modified_by
+created
+modified
+
+
+start: 0
+length: 10
+search[value]: 
+search[regex]: false
+_method: POST
+project_id: ec4d673ef91208b1b9144a41e5a13f06156b
+table-example-survey_length: 10
+
+
+1) Add subscription validation has been setup.
+2) Using iframe try to setup modal popup and submit form- Not working
+1) Ajax function has been created for check validation, display error using jquery - Done
+2) Reset error has been done.
+3) Working on add subscription.
+
+
+1) Validation has been added for start date greater than expire date.
+2) Installer id insertion issue has been resolved.
+3) Update status field according to expire date has been done.
+4) After add subscription 'add subscription' button will display or not according to expire date - Done
+1) When click on installer 'add subscription' button will display or not - Done
+2) Guide feni related proposal email serilize and unserialize issue and review her code.
+3)  Checking installer project table. According to active installer related project banner and ahasolar watermark display code has been done.
+
+New files added
+/src/Model/Table/InstallerSubscriptionTable.php
+/src/Controller/Admin/InstallerSubscriptionController.php
+/webroot/img/frontend/banner_pdf.jpg
+
+/src/Template/Element/site_survey.ctp
+/src/Controller/AppController.php
+/src/Controller/Admin/InstallerCompaniesController.php
+/src/Template/Admin/InstallerCompanies/index.ctp
+
+
+H8YaLetOdw
+
+......................E-log Remaining....................
+1) Download the required file from demo server modified all files and uploaded to demo server 
+2) Testing done after uploaded installer subscription 
+3) Checking the code and guide feni for proposal section code.
+
+1) Make milestone wise ETA for pleasuremeetingu site. - 5
+
+1) Make query and ETA for http://imagewerx.us site.
+2) Guide feni related how to fetch intaller from company name and ajax redirection.
+3) Review the site and make query pleasuremeetingu site.
+
+
+1) Help feni related opt send feature and form field value issue.
+2) Discussed installer registration with kalpak sir and feni.
+3) If company having installer then installer details display on installer registration page.
+1) Edit Basic details has been done.
+2) Add/Edit for Grid-Connected Rating, Off-Grid Rating, RESCO Rating.
+3) Working on area of Operation.
+
+1) Guide feni related to show/hide loader.
+2) Discussed company name insertion and update with kalpak sir.
+3) Area of Operations add/edit in installer registration done.
+4) When add installer and error occured then automatic checked area of operation and rating Information done
+5) Edit company name when company id select and add company when company id not set.
+
+
+
+/src/Controller/InstallerRegistrationsController.php
+/src/Template/InstallerRegistrations/installer_registration.ctp
+/config/routes.php
+
+
+Add plan for Per User.
+Add start date and expire date concept in installer_activation_codes.
+When user enter code then start date and expire date in user table.
+when login then check that expire date.
+Expire date from today to 30 days
+After payment go to activation table entry
+
+1) Discussed installer payment task with kalpak sir.
+2) Discussed current API with pritesh bhai.
+3) Working on review code.
+1) Review code finished
+2) Discussed taks list and table structure with kalpak sir
+
+
+
+
+
+1) Customer and installer activation code has been modified.
+2) Payumoney setup for installer payment done.
+3) Working on success functionality.
+
+Query Free flag concept
+
+Following feature has been done when successful payment.
+1) Entry in installer subscription has been done
+2) Entry in installer activation code has been done
+3) Customer update code has been done
+4) Sent mail feature has been done
+
+1) Payumoney failure feature has been done for installer.
+2) Help feni relate image upload feature
+1) When plan price 0 then retrun different response and plan price >0 then return different response done
+2) When customer used activation code start date and expire date set up done
+3) Table content in site survey PDF has been modified.
+
+1) Color changes in header done.
+2) Working on font bold issue in PDF file.
+
+
+1) site survey report for project : 
+info@ahasolar.in
+
+
+ALTER TABLE `sitesurvey_project_request`
+ADD `send_status` tinyint NOT NULL AFTER `requested_by`;
+
+/src/Controller/StaticController.php
+/src/Controller/AppController.php
+/src/Controller/Component/PhpExcelComponent.php
+/src/Shell/SendpdforexcelShell.php
+/src/Template/Email/html/sitesurvey_project_survey.ctp
+
+http://demo.ahasolar.in/Static/cron_send_survey
+
+1) On demo server bold font display in whole html working on it.
+1) Cron has been created and PDF attachment code has been done
+2) Working on xls attachment.
+
+
+1) . xls file attachment code for requested customer has been done.
+2) Mail template has been modified.
+1) Cron setup shell has been created for cakephp.
+2) Working on PDF html validation.
+
+
+1) Make html file related to sitesurvey PDF.
+2) Validate using validator.
+1) Solved all errors shown by validator.
+2) PDF still having bold issue.
+3) Working on custom font for bold issue.
+
+/*<link type="text/css" rel="stylesheet" media="all" href="css/style.css"  />@font-face {
+    font-family: 'font';
+    font-style: normal;
+    font-weight: bold;
+    src: url('/vendor/dompdf/lib/fonts/DejaVuSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/yYRnAC2KygoXnEC8IdU0gQLUuEpTyoUstqEm5AMlJo4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'source sans pro';
+  font-style: normal;
+  font-weight: bold;
+  src: font-url('SourceSansPro-Bold.ttf');
+  src: font-url('SourceSansPro-Bold.ttf') format('truetype'),
+       local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+       url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/toadOcfmlt9b38dHJxOBGBlTL9oEQvYTI0YAW1-Ysv0.eot) format('embedded-opentype'),
+       url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('/var/www/vhosts/ahasolar.in/demo.ahasolar.in/vendor/dompdf/lib/fonts/DejaVuSerif-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  src: local('Open Sans'), local('OpenSans'), url('/var/www/vhosts/ahasolar.in/demo.ahasolar.in/vendor/dompdf/lib/fonts/DejaVuSans.ttf') format('truetype');
+}*/
+/*@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/yYRnAC2KygoXnEC8IdU0gQLUuEpTyoUstqEm5AMlJo4.ttf) format('truetype');
+}*/
+1) Custom normal font has been downloaded and setup.
+2) Custom bold and normal fonts have been set up for whole PDF file.
+3) HR tag has been modified as per given document.
+4) Footer has been modified as per given document.
+
+
+ALTER TABLE `installer_subscription` ADD `coupen_id` INT NOT NULL AFTER `plan_id`, ADD `coupen_code` VARCHAR(60) NOT NULL AFTER `coupen_id`, ADD `amount` DECIMAL(10,2) NOT NULL AFTER `coupen_code`, ADD `is_flat` TINYINT NOT NULL AFTER `amount`;
+
+1) Discount coupen apply code has been done on installer regisration.
+2) Discount coupen code pass to payuoney.
+1) Success feature has been modified for disocunt fields.
+2) Coupen fields have been added to database subscription table.
+3) Communicalte with sachin and feni regarding files upload.
+4) Discussed coupen code logic with kalpak sir.
+
+1) Subscription code has been added to installer registration.
+2) Payu money has been modified for utf2.
+3) Discussed new feature with pritesh bhai.
+4) ETA of terms, workorder, execution and commissioning.
+
+/src/Controller/Admin/InstallerCompaniesController.php
+/src/Controller/Admin/InstallerSubscriptionController.php
+/src/Template/Admin/InstallerCompanies/index.ctp
+
+1) Admin side under installer subscription coupen code, coupen amount, is flat, payment status fields have been added uploaded to demo server and tested.
+2) Download files from demo server related to payumoney and installer registration and working on merge code.
+
+ALTER TABLE `installer_activation_codes` ADD `start_date` DATE NOT NULL AFTER `is_used`, ADD `expire_date` DATE NOT NULL AFTER `start_date`;
+ALTER TABLE `customers` ADD `start_date` DATE NOT NULL AFTER `status`, ADD `expire_date` DATE NOT NULL AFTER `start_date`;
+
+1) Download Installer, Payumoney, payu files form demo server.
+2) Merge the code and uploaded to demo server.
+3) installer_activation_code and customers table modification uploaded to demo server.
+
+/vendor/payumoney/payu.php
+/src/Controller/Admin/PayutransferController.php
+/src/Controller/Admin/InstallersController.php
+/src/Model/Table/InstallerSubscriptionTable.php
+
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\WorkordersController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\fesibility.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\ApplyOnlinesTable.php  
+
+ALTER TABLE `project_installation` ADD `m_capacity` DECIMAL(10,2) NOT NULL AFTER `installer_id`, ADD `m_modules` INT NOT NULL AFTER `m_capacity`, ADD `m_make` VARCHAR(100) NOT NULL AFTER `m_modules`, ADD `m_type_modules` VARCHAR(100) NOT NULL AFTER `m_make`, ADD `i_capacity` DECIMAL(10,2) NOT NULL AFTER `m_type_modules`, ADD `i_modules` INT NOT NULL AFTER `i_capacity`, ADD `i_make` VARCHAR(100) NOT NULL AFTER `i_modules`, ADD `i_type_modules` VARCHAR(100) NOT NULL AFTER `i_make`;
+
+ALTER TABLE `project_installation` ADD `latitude` DOUBLE NOT NULL AFTER `i_type_modules`, ADD `longitude` DOUBLE NOT NULL AFTER `latitude`;
+ALTER TABLE `project_installation` ADD `aadhar_card_no` TEXT NOT NULL AFTER `longitude`;
+ALTER TABLE `project_installation` ADD `attach_aadhar_card` VARCHAR(255) NOT NULL AFTER `aadhar_card_no`;
+
+CREATE TABLE IF NOT EXISTS `project_installation_photos` (
+  `id` int(11) NOT NULL,
+  `project_installation_id` int(11) NOT NULL,
+  `type` varchar(50) NOT NULL,
+  `photo` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ALTER TABLE `project_installation_photos`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `project_installation_photos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+http://demo.ahasolar.in/admin/installations/setinstallastion
+m_capacity
+m_modules
+m_make
+m_type_modules
+i_capacity
+i_modules
+i_make
+i_type_modules
+lat
+log
+aadhar_card_no
+attach_aadhar_card
+
+API name http://demo.ahasolar.in/admin/installations/uploadInstallationimage
+file_attach_execution
+installation_id
+image_type (modules/inverters)
+
+************************* Modified for Execution API ****************************
+/src/Model/Table/ProjectInstallationPhotosTable.php
+/src/Controller/Admin/InstallationsController.php
+/config/whitelable.php
+
+*********************************************************************************
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProposalsController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProjectsController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\WorkordersController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Projects\workorder.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Projects\index.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\WorkorderTable.php  
+Completed: At revision: 289  
+
+
+1) Take commited code from SVN and upload all my changes and all files commited
+2) Help sani regarding cakephp theme
+3) Discussed execution, proposal, Commission sections with feni
+4) Discussed listterms and uploadterms with jigar and pritesh
+5) In database table fields for modules and inverters have been added in projects_instalation
+6) Set and get for new fields in for API has been done
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProjectsController.php  
+Completed: At revision: 290  
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Completed: At revision: 291  
+
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\ParametersTable.php  
+Merged: F:\xampp\htdocs\ahasolar\src\Model\Table\ApplyOnlinesTable.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\ProjectsTable.php  
+Completed: At revision: 292  
+
+Following files have been modified for Communication Address
+/src/Controller/Admin/ApplyOnlinesController.php
+/src/Template/Admin/ApplyOnlines/view.ctp
+/src/Template/ApplyOnlines/view.ctp
+/src/Model/Table/ApplyOnlinesTable.php
+
+http://www.ahasolar.in/view-applyonline/ec4d673ef9200b1b9144a41e5a13f06156b
+http://www.ahasolar.in/admin/ApplyOnlines/view/ec4d673ef9351b1b9144a41e5a13f06156b
+
+Modified for category display field
+/src/Template/Admin/ApplyOnlines/view.ctp
+/src/Template/ApplyOnlines/view.ctp
+/src/Controller/Admin/ApplyOnlinesController.php
+
+Modified for project name validation
+/src/Template/SolarCalculators/solar_calculator.ctp
+
+Modified for logo changes
+/src/Template/Email/html/application_submission_letter.ctp
+
+1) Communication Address feature has been modified for api and web. Files uploaded to demo and code added in live server
+2) Category display field has been modified for api and web. Done on demo and code added in live.
+3) Project name validation done in solar-calculator. Done on demo and code added in live.
+4) Apply online button has been added in project listing. When click on that button project state and istaller of that project display feature done. Working on display other fields of project on apply online form
+5) Help sani regarding header display for inner pages and issue in email template for new theme.
+
+/src/Template/Admin/ApplyOnlines/view.ctp
+/src/Template/ApplyOnlines/view.ctp
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\CustomerProjectsTable.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Merged: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\fesibility.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\applyonline_list.ctp  
+Merged: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\index.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Leads\add.ctp  
+Merged: F:\xampp\htdocs\ahasolar\src\Template\Projects\index.ctp  
+Updated: F:\xampp\htdocs\ahasolar\webroot\css\frontend\custom.css  
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\fesibility.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\applyonline_list.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\ApplyOnlinesTable.php  
+Merged: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Completed: At revision: 314  
+
+Completed: At revision: 311  
+
+ALTER TABLE `apply_onlines` CHANGE `aadhar_no_or_pan_card_no` `aadhar_no_or_pan_card_no` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+ALTER TABLE `apply_onlines` CHANGE `pan_card_no` `pan_card_no` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+ALTER TABLE `apply_onlines` CHANGE `house_tax_holding_no` `house_tax_holding_no` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+
+1) View apply online has been modified for payment status, payment gateway, payment mode and files uploaded to demo and live.
+2) Discussed login box issue with sani.
+3) Encrypt, decrypt feature has been added for aadhar card, pan card, house tax number. Code done for add, edit, view for web and api in apply online section
+4) Display data from project on apply online page done. Installer selection based on project and state has been done. When already application submitted redirection done.
+
+
+ALTER TABLE `apply_onlines`
+CHANGE `aadhar_no_or_pan_card_no` `aadhar_no_or_pan_card_no` text COLLATE 'latin1_swedish_ci' NULL AFTER `consumer_no`,
+CHANGE `pan_card_no` `pan_card_no` text COLLATE 'latin1_swedish_ci' NULL AFTER `attach_photo_scan_of_aadhar`,
+CHANGE `house_tax_holding_no` `house_tax_holding_no` text COLLATE 'latin1_swedish_ci' NULL AFTER `attach_recent_bill`;
+
+/config/commonfunctions.php
+
+/src/Controller/ApplyOnlinesController.php
+/src/Controller/ProjectsController.php
+/src/Controller/Admin/ApplyOnlinesController.php
+
+/src/Template/Projects/index.ctp
+/src/Template/ApplyOnlines/index.ctp
+/src/Template/ApplyOnlines/view.ctp
+/src/Template/Admin/ApplyOnlines/view.ctp
+
+1) Apply online using project has been uploaded to demo and live and tested.
+2) Apply online passencrypt and passdecrypt code has been done for database table and files related this feature uploaded to demo and live and tested.
+3) Aadhar number, aadhar image display and add feature has been done.
+4) project_installation_photos table has been created.
+5) API for upload module and inverter images have been done
+6) Working on Email environment variable feature
+
+
+1) State condition has been removed from installer.
+2) State has been modified for solar calculator result and find installer has been modified.
+3) getinstallerlist,searchinstaller and getprojectfindinstallerlist  api has been modified. Uploaded to demo and live.
+4) EMAIL_ENV variable has been uploaded to demo and live and tested.
+5) Table have been checked for state text to state id modification and discussed with kalpak sir
+6) Email template for send site survey report has been modified. Uploaded to demo and live.
+
+/src/Model/Table/InstallersTable.php - modified for state condition
+
+/src/Template/SolarCalculators modified for project id pass to getinstallerlist
+/src/Controller/InstallersController.php modified getinstallerlist and subject for mail has been modified.
+
+/src/Controller/ApplyOnlinesController.php
+/src/Controller/CustomersController.php
+/src/Controller/InstallerRegistrationsController.php
+/src/Controller/ProjectsController.php
+/src/Controller/StaticController.php
+
+
+/src/Controller/Admin/ApplyOnlinesController.php
+/src/Controller/Admin/CustomersController.php
+/src/Controller/Admin/EmpanelledsController.php
+/src/Controller/Admin/InstallersController.php
+/src/Controller/Admin/ProposalsController.php
+/src/Controller/Admin/MemberController.php
+/src/Controller/Admin/ProjectsController.php
+
+/src/Controller/Admin/InstallationsController.php getinstallaion function has been modified.
+
+/src/Controller/Admin/InstallersController.php modified searchinstaller and getprojectfindinstallerlist api
+Checking the geolocation issue at the time of project addition
+Email template for site survey reuest has been modified
+/src/Template/Email/html/sitesurvey_project_survey.ctp
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Committing transaction...:   
+Completed: At revision: 353  
+
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\CustomersController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\InstallerRegistrationsController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\StaticController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\CustomersController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\StaticController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\InstallerRegistrationsController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Committing transaction...:   
+Completed: At revision: 345  
+
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\CustomersController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\EmpanelledsController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\MemberController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProjectsController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProposalsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\CustomersController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\MemberController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\EmpanelledsController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProjectsController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProposalsController.php  
+Committing transaction...:   
+Completed: At revision: 346  
+
+
+ALTER TABLE `project_installation` ADD `m_type_other` VARCHAR(255) NOT NULL AFTER `m_type_modules`;
+ALTER TABLE `project_installation` ADD `i_type_other` VARCHAR(255) NOT NULL AFTER `i_type_modules`;
+ALTER TABLE `project_installation` ADD `i_make_other` VARCHAR(255) NOT NULL AFTER `i_make`;
+
+
+ALTER TABLE `project_installation`
+CHANGE `i_make` `i_make` int NOT NULL AFTER `i_modules`;
+
+ALTER TABLE `project_installation`
+CHANGE `m_type_modules` `m_type_modules` int NOT NULL AFTER `m_make`,
+CHANGE `i_type_modules` `i_type_modules` int NOT NULL AFTER `i_make_other`;
+
+
+ALTER TABLE `project_commissioning`
+ADD `latitude` double NOT NULL AFTER `certificate_photo`,
+ADD `longitude` double NOT NULL AFTER `latitude`;
+
+
+        "project_id": 3066,
+        "m_capacity": 25,
+        "m_modules": 100,
+        "m_make": "test make",
+        "m_type_modules": 2,
+        "m_type_other": "",
+        "i_capacity": 20,
+        "i_modules": 200,
+        "i_make": 21,
+        "i_make_other": "",
+        "i_type_modules": 6,
+        "i_type_other": "test inverter other",
+        "latitude": 27.1122,
+        "longitude": 72.1111,
+        "aadhar_card_no": "",
+        "attach_aF:\xampp\htdocs\ahasolar\src\Controller\Admin\WorkordersController.php
+
+adhar_card": ""
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallationsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallationsController.php  
+Committing transaction...:   
+Completed: At revision: 358  
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Model\Table\InstallationTable.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Model\Table\InstallationTable.php  
+Committing transaction...:   
+Completed: At revision: 359  
+
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\SiteSurveysController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\SiteSurveysController.php  
+Committing transaction...:   
+Completed: At revision: 360  
+
+Modified installer id fetching code in API
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\CommercialsController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallationsController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallerUsersController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProposalsController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\WorkordersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\CommercialsController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallerUsersController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\WorkordersController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProposalsController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallationsController.php  
+Committing transaction...:   
+Completed: At revision: 361  
+
+Modified for installer id fetching code
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\InstallerRegistrationsController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\InstallersController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\InstallerRegistrationsController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\InstallersController.php  
+Committing transaction...:   
+Completed: At revision: 362  
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallationsController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallerUsersController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\LeadsController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProposalsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallerUsersController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProposalsController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallationsController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\LeadsController.php  
+Committing transaction...:   
+Completed: At revision: 363  
+
+/src/Controller/InstallerRegistrationsController.php
+/src/Controller/InstallersController.php
+/src/Controller/ProjectsController.php
+
+/src/Controller/Admin/InstallationsController.php
+/src/Controller/Admin/InstallerUsersController.php
+/src/Controller/Admin/LeadsController.php
+/src/Controller/Admin/ProposalsController.php
+
+1) Installer for customer query has been modified to all controllers files.
+2) Installation API has been modified for aadhar card image issue when add, edit and display (rc\Controller\Admin\InstallationsController.php)
+3) Modified login api for upload_pdf_limit and upload_image_limit parameters (src\Controller\Admin\CustomersController.php
+config\bootstrap.php)
+4) Modified getinstallation API for document list output.
+5) Commissioning API has been modified for latitude, longitude, certification no, certification image has been done. Add and edit code has been done.
+6) commissioning request for distribution, cheif, state has been done
+7) Commissioning image upload API has been done.
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallationsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallationsController.php  
+Committing transaction...:   
+Completed: At revision: 365  
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\CustomersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\CustomersController.php  
+Committing transaction...:   
+Completed: At revision: 366  
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\config\bootstrap.php  
+Sending content: F:\xampp\htdocs\ahasolar\config\bootstrap.php  
+Committing transaction...:   
+Completed: At revision: 367  
+
+
+1) Installation API has been modified for contact number and attached document list. Add logic for capacity from workorder.
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallationsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallationsController.php  
+Committing transaction...:   
+Completed: At revision: 369  
+2) Commissioning API result has been created. API urls and list of parameter for commissioning and other document of commissioning have been given. 
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\SiteSurveysController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\SiteSurveysController.php  
+Committing transaction...:   
+Completed: At revision: 370  
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Projects\commissioning.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Projects\sitesurvey.ctp  
+Conflicted: F:\xampp\htdocs\ahasolar\src\Template\Projects\execution.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Completed: At revision: 371  
+Warning!: One or more files are in a conflicted state.  
+ec4d673ef93121b1b9144a41e5a13f06156b
+
+$state_list  = $this->States->find('all',array(
+                              'conditions'=>array('id'=>$state)))->first();
+$installers_list = $this->Installers->find('list',['keyField'=>'id','valueField'=>'installer_name','join'=>[['table'=>'states','type'=>'inner','conditions'=>'states.statename = Installers.state']],'conditions'=>['Installers.state'=>$state_list->statename]])->toArray();
+
+
+
+Modified instoler_list_by_state_id function pass project_id 
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\webroot\js\frontend\custom.js  
+Sending content: F:\xampp\htdocs\ahasolar\webroot\js\frontend\custom.js  
+Committing transaction...:   
+Completed: At revision: 374  
+
+installer query has been modified
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\CustomersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\CustomersController.php  
+Committing transaction...:   
+Completed: At revision: 375  
+
+getinstallerlist has been modified for lising and searching
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\InstallersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\InstallersController.php  
+Committing transaction...:   
+Completed: At revision: 376  
+
+index function and instoler_list_by_state_id have been modified
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Committing transaction...:   
+Completed: At revision: 377  
+
+Hidden field for project_id has been added
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\index.ctp  
+Sending content: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\index.ctp  
+Committing transaction...:   
+Completed: At revision: 378  
+
+Search feature has been added
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\Installers\getinstallerlist.ctp  
+Sending content: F:\xampp\htdocs\ahasolar\src\Template\Installers\getinstallerlist.ctp  
+Committing transaction...:   
+Completed: At revision: 379  
+
+
+1) Modified for project_name validation and edit feature
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\SolarCalculatorsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\SolarCalculatorsController.php  
+Committing transaction...:   
+Completed: At revision: 380  
+
+2) Project name field has been added nd validation code has been added.
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\SolarCalculators\solar_calculator_result.ctp  
+Sending content: F:\xampp\htdocs\ahasolar\src\Template\SolarCalculators\solar_calculator_result.ctp  
+Committing transaction...:   
+Completed: At revision: 381  
+
+3) Modified file_upload function for unique image name
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\AppController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\AppController.php  
+Committing transaction...:   
+Completed: At revision: 382  
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\SolarCalculators\solar_calculator.ctp  
+Sending content: F:\xampp\htdocs\ahasolar\src\Template\SolarCalculators\solar_calculator.ctp  
+Committing transaction...:   
+Completed: At revision: 383  
+
+4) Modified display of capacity
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\Projects\index.ctp  
+Sending content: F:\xampp\htdocs\ahasolar\src\Template\Projects\index.ctp  
+Committing transaction...:   
+Completed: At revision: 385  
+
+Leads API has been modified.
+
+
+5) Modified getinstaller list in installers file
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\InstallersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\InstallersController.php  
+Committing transaction...:   
+Completed: At revision: 386  
+
+6) Installer display issue sometimes for getinstaller has been modified.
+
+search second time issue
+list project with lead section.
+
+project detail modification
+
+Aha lead section listing with accept/reject section
+
+1) Customer login API has been modified.
+2) Aha lead section query has been created.
+3) Customer lead section has been modified.
+4) Project listing has been modified.
+5) Edit lead disabled value for drop down has been done.
+6) Fetch lead data code has been modified.
+7) project assign to bd when project created done.
+8) Login customer section has been modified is_admin flag added.
+9) Apply online API has been modified if insaller than project created automatically.
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\LeadsController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\LeadsController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Committing transaction...:   
+Completed: At revision: 389  
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\Leads\add.ctp  
+Sending content: F:\xampp\htdocs\ahasolar\src\Template\Leads\add.ctp  
+Committing transaction...:   
+Completed: At revision: 390  
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\Projects\leads.ctp  
+Sending content: F:\xampp\htdocs\ahasolar\src\Template\Projects\leads.ctp  
+Committing transaction...:   
+Completed: At revision: 391  
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\CustomersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\CustomersController.php  
+Committing transaction...:   
+Completed: At revision: 392  
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\LeadsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\LeadsController.php  
+Committing transaction...:   
+Completed: At revision: 393  
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Model\Table\CustomerProjectsTable.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Model\Table\CustomerProjectsTable.php  
+Committing transaction...:   
+Completed: At revision: 394  
+
+
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Model\Table\ProjectsTable.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Model\Table\ProjectsTable.php  
+Committing transaction...:   
+Completed: At revision: 395  
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\UsersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\UsersController.php  
+Committing transaction...:   
+Completed: At revision: 396  
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Committing transaction...:   
+Completed: At revision: 397  
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\Projects\index.ctp  
+Sending content: F:\xampp\htdocs\ahasolar\src\Template\Projects\index.ctp  
+Committing transaction...:   
+Completed: At revision: 398  
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Committing transaction...:   
+Completed: At revision: 399  
+
+src\Controller\LeadsController.php  
+src\Controller\ProjectsController.php 
+src\Controller\UsersController.php  
+src\Controller\Admin\CustomersController.php
+src\Controller\Admin\InstallersController.php
+src\Controller\Admin\LeadsController.php
+src\Controller\Admin\ApplyOnlinesController.php
+src\Template\Leads\add.ctp
+src\Template\Projects\leads.ctp
+src\Template\Projects\index.ctp
+
+src\Model\Table\CustomerProjectsTable.php
+src\Model\Table\ProjectsTable.php
+
+1) Company add code has been modified.
+2) Assign bd has been modified for API and web.
+3) Add parameter for request data
+4) Status condition has been added in search installer and get installer
+5) getbillcategory has been modified.
+6) project listing changes, lead display section uploaded to live server and testing done
+7) Excution, commissioning, terms related code for web and API uplaoded to live server testing done
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Committing transaction...:   
+Completed: At revision: 403  
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProjectsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProjectsController.php  
+Committing transaction...:   
+Completed: At revision: 404  
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Committing transaction...:   
+Completed: At revision: 405  
+
+
+ALTER TABLE `project_survey` CHANGE `month_details` `month_details` LONGTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `installer_terms` ADD `position_order` TINYINT NOT NULL AFTER `status`;
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Leads\add.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Projects\execution.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\InstallationTable.php  
+Completed: At revision: 407  
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\SiteSurveysController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\SiteSurveysController.php  
+Committing transaction...:   
+Completed: At revision: 410  
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\InstallersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\InstallersController.php  
+Committing transaction...:   
+Completed: At revision: 411  
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Committing transaction...:   
+Completed: At revision: 413  
+
+1) Request array has been modified.
+2) Add code related to get request when submit request from APP.
+3) Modified app_save function.
+4) Branch has been added related to excel.
+5) From Excel of GUVNL sub excel has been created for unique area member and area discom
+6) Data import of area to members and branch master have been done
+7) Working on create excel in order to insert circle.
+
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\SiteSurveysController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\SiteSurveysController.php  
+Committing transaction...:   
+Completed: At revision: 414  
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\SiteSurveysController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\SiteSurveysController.php  
+Committing transaction...:   
+Completed: At revision: 416  
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Committing transaction...:   
+Completed: At revision: 417  
+
+
+
+
+INSERT INTO `branch_masters` (`id`, `parent_id`, `title`, `city`, `state`, `area`, `status`, `created`, `created_by`, `updated`, `updared_by`) VALUES (NULL, '0', 'Dakshin Gujarat Vij Company Limited (DGVCL)', NULL, '4', NULL, '1', '2018-06-27 11:12:00', NULL, '0000-00-00 00:00:00.000000', NULL);
+INSERT INTO `branch_masters` (`id`, `parent_id`, `title`, `city`, `state`, `area`, `status`, `created`, `created_by`, `updated`, `updared_by`) VALUES (NULL, '0', 'Madhya Gujarat Vij Company Ltd.(MGVCL)', NULL, '4', NULL, '1', '2018-06-27 11:14:00', NULL, '0000-00-00 00:00:00.000000', NULL);
+INSERT INTO `branch_masters` (`id`, `parent_id`, `title`, `city`, `state`, `area`, `status`, `created`, `created_by`, `updated`, `updared_by`) VALUES (NULL, '0', 'Uttar Gujarat Vij Company Ltd.(UGVCL)', NULL, '4', NULL, '1', '2018-06-27 11:15:00', NULL, '0000-00-00 00:00:00.000000', NULL);
+INSERT INTO `branch_masters` (`id`, `parent_id`, `title`, `city`, `state`, `area`, `status`, `created`, `created_by`, `updated`, `updared_by`) VALUES (NULL, '0', 'Paschim Gujarat Vij Company Ltd.(PGVCL)', NULL, '4', NULL, '1', '2018-06-27 11:16:00', NULL, '0000-00-00 00:00:00.000000', NULL);
+INSERT INTO `branch_masters` (`id`, `parent_id`, `title`, `city`, `state`, `area`, `status`, `created`, `created_by`, `updated`, `updared_by`) VALUES (NULL, '0', 'Torrent Power Ahmedabad', NULL, '4', NULL, '1', '2018-06-27 17:38:00', NULL, '0000-00-00 00:00:00.000000', NULL);
+INSERT INTO `branch_masters` (`id`, `parent_id`, `title`, `city`, `state`, `area`, `status`, `created`, `created_by`, `updated`, `updared_by`) VALUES (NULL, '0', 'Torrent Power Surat', NULL, '4', NULL, '1', '2018-06-27 17:39:00', NULL, '0000-00-00 00:00:00.000000', NULL);
+
+
+INSERT INTO `discom_master` VALUES ('466', NULL, '1', NULL, NULL, NULL, NULL, '4', 'DGVCL', '2018-06-27.02:00:00', '1', '2018-06-27.02:00:00', '1')
+INSERT INTO `discom_master` VALUES ('467', NULL, '1', NULL, NULL, NULL, NULL, '4', 'MGVCL', '2018-06-27.02:00:01', '1', '2018-06-27.02:00:01', '1')
+INSERT INTO `discom_master` VALUES ('468', NULL, '1', NULL, NULL, NULL, NULL, '4', 'UGVCL', '2018-06-27.02:00:02', '1', '2018-06-27.02:00:02', '1')
+INSERT INTO `discom_master` VALUES ('469', NULL, '1', NULL, NULL, NULL, NULL, '4', 'PGVCL', '2018-06-27.02:00:03', '1', '2018-06-27.02:00:03', '1')
+INSERT INTO `discom_master` VALUES ('470', NULL, '1', NULL, NULL, NULL, NULL, '4', 'Torrent Power Ahmedabad', '2018-06-27.02:00:04', '1', '2018-06-27.02:00:04', '1')
+INSERT INTO `discom_master` VALUES ('471', NULL, '1', NULL, NULL, NULL, NULL, '4', 'Torrent Power Surat', '2018-06-27.02:00:05', '1', '2018-06-27.02:00:05', '1')
+
+
+
+INSERT INTO `members` VALUES ('493', '11', '0', '0', '0', '0', '0', '6002', 'DGVCL', '', '', '', '', '', '', '4', '', 'dgvcl', '', '', '', '0', '0', '0000-00-00.00:00:00', '', '1', '', '2018-06-27.02:00:00', '2018-06-27.02:00:00')
+INSERT INTO `members` VALUES ('494', '12', '0', '0', '0', '0', '0', '6002', 'MGVCL', '', '', '', '', '', '', '4', '', 'mgvcl', '', '', '', '0', '0', '0000-00-00.00:00:00', '', '1', '', '2018-06-27.02:00:01', '2018-06-27.02:00:01')
+INSERT INTO `members` VALUES ('495', '13', '0', '0', '0', '0', '0', '6002', 'UGVCL', '', '', '', '', '', '', '4', '', 'ugvcl', '', '', '', '0', '0', '0000-00-00.00:00:00', '', '1', '', '2018-06-27.02:00:02', '2018-06-27.02:00:02')
+INSERT INTO `members` VALUES ('496', '14', '0', '0', '0', '0', '0', '6002', 'PGVCL', '', '', '', '', '', '', '4', '', 'pgvcl', '', '', '', '0', '0', '0000-00-00.00:00:00', '', '1', '', '2018-06-27.02:00:03', '2018-06-27.02:00:03')
+INSERT INTO `members` VALUES ('497', '15', '0', '0', '0', '0', '0', '6002', 'Torrent Power Ahmedabad', '', '', '', '', '', '', '4', '', 'torrent power.ahmedabad', '', '', '', '0', '0', '0000-00-00.00:00:00', '', '1', '', '2018-06-27.02:00:04', '2018-06-27.02:00:04')
+INSERT INTO `members` VALUES ('498', '16', '0', '0', '0', '0', '0', '6002', 'Torrent Power Surat', '', '', '', '', '', '', '4', '', 'torrent power.surat', '', '', '', '0', '0', '0000-00-00.00:00:00', '', '1', '', '2018-06-27.02:00:05', '2018-06-27.02:00:05')
+
+
+ALTER TABLE `discom_master` ADD `short_code` VARCHAR(10) NOT NULL AFTER `title`;
+ALTER TABLE `branch_masters` ADD `discom_id` INT NOT NULL AFTER `status`;
+
+UPDATE `branch_masters` SET `discom_id` = '466' WHERE `branch_masters`.`id` = 11;
+UPDATE `branch_masters` SET `discom_id` = '467' WHERE `branch_masters`.`id` = 12;
+UPDATE `branch_masters` SET `discom_id` = '468' WHERE `branch_masters`.`id` = 13;
+UPDATE `branch_masters` SET `discom_id` = '469' WHERE `branch_masters`.`id` = 14;
+UPDATE `branch_masters` SET `discom_id` = '470' WHERE `branch_masters`.`id` = 15;
+UPDATE `branch_masters` SET `discom_id` = '471' WHERE `branch_masters`.`id` = 16;
+
+
+UPDATE `members` SET `area` = '466' WHERE `members`.`id` = 493;
+UPDATE `members` SET `area` = '467' WHERE `members`.`id` = 494;
+UPDATE `members` SET `area` = '468' WHERE `members`.`id` = 495;
+UPDATE `members` SET `area` = '469' WHERE `members`.`id` = 496;
+UPDATE `members` SET `area` = '470' WHERE `members`.`id` = 497;
+UPDATE `members` SET `area` = '471' WHERE `members`.`id` = 498;
+
+INSERT INTO `discom_master` VALUES ('472', '0', '2', '466', NULL, NULL, NULL, '4', 'SURAT O&M', '21', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('473', '0', '2', '467', NULL, NULL, NULL, '4', 'BARODA O&M', '22', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('474', '0', '2', '467', NULL, NULL, NULL, '4', 'ANAND O&M', '23', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('475', '0', '2', '468', NULL, NULL, NULL, '4', 'SABARMATI O&M', '24', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('476', '0', '2', '468', NULL, NULL, NULL, '4', 'MEHSANA O&M', '25', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('477', '0', '2', '469', NULL, NULL, NULL, '4', 'PORBANDAR O&M', '26', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('478', '0', '2', '469', NULL, NULL, NULL, '4', 'BHAVNAGAR O&M', '27', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('479', '0', '2', '469', NULL, NULL, NULL, '4', 'RAJKOT CITY', '28', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('480', '0', '2', '469', NULL, NULL, NULL, '4', 'JAMNAGAR O&M', '29', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('481', '0', '2', '468', NULL, NULL, NULL, '4', 'PALANPUR O&M', '30', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('482', '0', '2', '469', NULL, NULL, NULL, '4', 'KACHCHH O&M', '31', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('483', '0', '2', '468', NULL, NULL, NULL, '4', 'HIMMATNAGAR O&M', '32', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('484', '0', '2', '467', NULL, NULL, NULL, '4', 'BARODA(CITY) O&M', '33', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('485', '0', '2', '466', NULL, NULL, NULL, '4', 'VALSAD O&M', '34', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('486', '0', '2', '466', NULL, NULL, NULL, '4', 'BHARUCH O&M', '35', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('487', '0', '2', '467', NULL, NULL, NULL, '4', 'GODHRA O&M', '36', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('488', '0', '2', '469', NULL, NULL, NULL, '4', 'AMRELI O&M', '37', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('489', '0', '2', '469', NULL, NULL, NULL, '4', 'SURENDRANAGAR O&M ', '38', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('490', '0', '2', '469', NULL, NULL, NULL, '4', 'JUNAGADH O&M', '39', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('491', '0', '2', '469', NULL, NULL, NULL, '4', 'RAJKOT-2 O&M', '40', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('492', '0', '2', '469', NULL, NULL, NULL, '4', 'BOTAD', '41', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('493', '0', '2', '469', NULL, NULL, NULL, '4', 'MORBI', '42', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('494', '0', '2', '466', NULL, NULL, NULL, '4', 'SURAT CITY', '43', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('495', '0', '2', '467', NULL, NULL, NULL, '4', 'NADIAD', '44', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+INSERT INTO `discom_master` VALUES ('496', '0', '2', '469', NULL, NULL, NULL, '4', 'ANJAR', '45', '28-06-2018 10:00', '1', '28-06-2018 10:00', '1')
+
+
+
+INSERT INTO `members` VALUES ('499', '11', '466', '472', '0', '0', '0', '6002', 'SURAT O&M', '', '', '', '', '', '', '4', '', 'surat.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('500', '12', '467', '473', '0', '0', '0', '6002', 'BARODA O&M', '', '', '', '', '', '', '4', '', 'baroda.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('501', '12', '467', '474', '0', '0', '0', '6002', 'ANAND O&M', '', '', '', '', '', '', '4', '', 'anand.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('502', '13', '468', '475', '0', '0', '0', '6002', 'SABARMATI O&M', '', '', '', '', '', '', '4', '', 'sabarmati.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('503', '13', '468', '476', '0', '0', '0', '6002', 'MEHSANA O&M', '', '', '', '', '', '', '4', '', 'mehsana.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('504', '14', '469', '477', '0', '0', '0', '6002', 'PORBANDAR O&M', '', '', '', '', '', '', '4', '', 'porbandar.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('505', '14', '469', '478', '0', '0', '0', '6002', 'BHAVNAGAR O&M', '', '', '', '', '', '', '4', '', 'bhavnagar.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('506', '14', '469', '479', '0', '0', '0', '6002', 'RAJKOT CITY', '', '', '', '', '', '', '4', '', 'rajkot.city', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('507', '14', '469', '480', '0', '0', '0', '6002', 'JAMNAGAR O&M', '', '', '', '', '', '', '4', '', 'jamnagar.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('508', '13', '468', '481', '0', '0', '0', '6002', 'PALANPUR O&M', '', '', '', '', '', '', '4', '', 'palanpur.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('509', '14', '469', '482', '0', '0', '0', '6002', 'KACHCHH O&M', '', '', '', '', '', '', '4', '', 'kachchh.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('510', '13', '468', '483', '0', '0', '0', '6002', 'HIMMATNAGAR O&M', '', '', '', '', '', '', '4', '', 'himmatnagar.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('511', '12', '467', '484', '0', '0', '0', '6002', 'BARODA(CITY) O&M', '', '', '', '', '', '', '4', '', 'baroda(city).o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('512', '11', '466', '485', '0', '0', '0', '6002', 'VALSAD O&M', '', '', '', '', '', '', '4', '', 'valsad.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('513', '11', '466', '486', '0', '0', '0', '6002', 'BHARUCH O&M', '', '', '', '', '', '', '4', '', 'bharuch.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('514', '12', '467', '487', '0', '0', '0', '6002', 'GODHRA O&M', '', '', '', '', '', '', '4', '', 'godhra.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('515', '14', '469', '488', '0', '0', '0', '6002', 'AMRELI O&M', '', '', '', '', '', '', '4', '', 'amreli.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('516', '14', '469', '489', '0', '0', '0', '6002', 'SURENDRANAGAR O&M ', '', '', '', '', '', '', '4', '', 'surendranagar o&m.', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('517', '14', '469', '490', '0', '0', '0', '6002', 'JUNAGADH O&M', '', '', '', '', '', '', '4', '', 'junagadh.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('518', '14', '469', '491', '0', '0', '0', '6002', 'RAJKOT-2 O&M', '', '', '', '', '', '', '4', '', 'rajkot-2.o&m', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('519', '14', '469', '492', '0', '0', '0', '6002', 'BOTAD', '', '', '', '', '', '', '4', '', 'botad', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('520', '14', '469', '493', '0', '0', '0', '6002', 'MORBI', '', '', '', '', '', '', '4', '', 'morbi', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('521', '11', '466', '494', '0', '0', '0', '6002', 'SURAT CITY', '', '', '', '', '', '', '4', '', 'surat.city', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('522', '12', '467', '495', '0', '0', '0', '6002', 'NADIAD', '', '', '', '', '', '', '4', '', 'nadiad', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+INSERT INTO `members` VALUES ('523', '14', '469', '496', '0', '0', '0', '6002', 'ANJAR', '', '', '', '', '', '', '4', '', 'anjar', '', '', '', '0', '0', '0000-00-00 00:00:00', '', '1', '', '27-06-2018 23:42', '27-06-2018 23:42')
+
+
+
+UPDATE `members` SET `email` = 'dgvcl-21' WHERE `members`.`id` = 499;
+UPDATE `members` SET `email` = 'mgvcl-22' WHERE `members`.`id` = 500;
+UPDATE `members` SET `email` = 'mgvcl-23' WHERE `members`.`id` = 501;
+UPDATE `members` SET `email` = 'ugvcl-25' WHERE `members`.`id` = 503;
+UPDATE `members` SET `email` = 'pgvcl-26' WHERE `members`.`id` = 504;
+UPDATE `members` SET `email` = 'pgvcl-27' WHERE `members`.`id` = 505;
+UPDATE `members` SET `email` = 'pgvcl-28' WHERE `members`.`id` = 506;
+UPDATE `members` SET `email` = 'pgvcl-29' WHERE `members`.`id` = 507;
+UPDATE `members` SET `email` = 'ugvcl-30' WHERE `members`.`id` = 508;
+
+UPDATE `members` SET `email` = 'pgvcl-31' WHERE `members`.`id` = 509;
+UPDATE `members` SET `email` = 'ugvcl-32' WHERE `members`.`id` = 510;
+UPDATE `members` SET `email` = 'mgvcl-33' WHERE `members`.`id` = 511;
+UPDATE `members` SET `email` = 'dgvcl-34' WHERE `members`.`id` = 512;
+UPDATE `members` SET `email` = 'dgvcl-35' WHERE `members`.`id` = 513;
+UPDATE `members` SET `email` = 'mgvcl-36' WHERE `members`.`id` = 514;
+UPDATE `members` SET `email` = 'pgvcl-37' WHERE `members`.`id` = 515;
+UPDATE `members` SET `email` = 'pgvcl-38' WHERE `members`.`id` = 516;
+UPDATE `members` SET `email` = 'pgvcl-39' WHERE `members`.`id` = 517;
+UPDATE `members` SET `email` = 'pgvcl-40' WHERE `members`.`id` = 518;
+UPDATE `members` SET `email` = 'pgvcl-41' WHERE `members`.`id` = 519;
+UPDATE `members` SET `email` = 'pgvcl-42' WHERE `members`.`id` = 520;
+UPDATE `members` SET `email` = 'dgvcl-43' WHERE `members`.`id` = 521;
+UPDATE `members` SET `email` = 'mgvcl-44' WHERE `members`.`id` = 522;
+UPDATE `members` SET `email` = 'pgvcl-45' WHERE `members`.`id` = 523;
+
+
+
+UPDATE `discom_master` SET `created` = '2018-06-28 12:15:12', `modified` = '2018-06-28 12:15:12' WHERE `discom_master`.`id` >= 472;
+UPDATE `members` SET `created` = '2018-06-28 12:15:12', `modified` = '2018-06-28 12:15:12' WHERE `id` >= 499
+
+
+1) Insert circle data into database table members and discom from excel have been done
+2) Division data excel has been created and csv imported to members and discom table.
+3) Subdivision data excel has been created and csv imported to members and discom table.
+4) Tables uploaded to demo server.
+5) My application listing has been modified for web and API.
+
+applyonline_list has been modified.
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Committing transaction...:   
+Completed: At revision: 420  
+apply_online_listapi has been modified.
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Committing transaction...:   
+Completed: At revision: 421  
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Model\Table\ApplyOnlinesTable.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Model\Table\ApplyOnlinesTable.php  
+Committing transaction...:   
+Completed: At revision: 422  
+1) My application listing has been modified for web and API changes uploaded to live.
+1) Modified create project feature for member when approved feasibility. uploaded and tested on demo and live
+3) Try to access localhost from another computer - not done
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Committing transaction...:   
+Completed: At revision: 426  
+
+
+ALTER TABLE `apply_onlines` ADD `last_name` VARCHAR(50) NOT NULL AFTER `name_of_consumer_applicant`;
+ALTER TABLE `apply_onlines` ADD `third_name` varchar(50) COLLATE 'latin1_swedish_ci' NOT NULL AFTER `last_name`;
+
+1) Listing of modules, inverter type and make in getBillCategory has been done. single list given code has been done at the time of consumer found.
+2) Default display of roof top, avg monthly bill, avg monthly unit consume has been done on apply online
+3) modules and inverter fields have been added to apply online ctp file and add/edit entry to execution table has been done
+4) app_save api has been modified for add/edit module and inverter entry.
+5) Display of firstname and last name done.
+
+
+1) Display of inverter and modules details when edit or come after project execution - done
+2) Latitude not display when create project from application - Done
+3) Project execution gives error when start date and end date blank - Done for web and API
+4) Middle name has been added in apply online gujarat. First name and last name show  for other. Validation of last name has been added. Done for web and api.
+5) Feasibility report has been modified for gujarat.
+Need to upload live for gujarat:
+1) Login has been modified.
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\UsersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\UsersController.php  
+Committing transaction...:   
+Completed: At revision: 435  
+2) Execution section has been modified.
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Committing transaction...:   
+Completed: At revision: 436  
+3) last name and middle name field have been added
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Committing transaction...:   
+Completed: At revision: 437  
+4) execution api has been modified.
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallationsController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallationsController.php  
+Committing transaction...:   
+Completed: At revision: 438  
+5) app_save function has been modified.
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Committing transaction...:   
+Completed: At revision: 439  
+6) last name validation has been added.
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Model\Table\ApplyOnlinesTable.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Model\Table\ApplyOnlinesTable.php  
+Committing transaction...:   
+Completed: At revision: 440  
+7) Modified for gujarat
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\applyonline_list.ctp  
+Sending content: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\applyonline_list.ctp  
+Committing transaction...:   
+Completed: At revision: 441  
+8) Fields has been added for middle name, premise no and premise document
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\index.ctp  
+Sending content: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\index.ctp  
+Committing transaction...:   
+Completed: At revision: 442  
+9) view has been modified for house premise
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\view.ctp  
+Sending content: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\view.ctp  
+Committing transaction...:   
+Completed: At revision: 442  
+10) view has been modified for premise
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\Admin\ApplyOnlines\view.ctp  
+Sending content: F:\xampp\htdocs\ahasolar\src\Template\Admin\ApplyOnlines\view.ctp  
+Committing transaction...:   
+Completed: At revision: 444  
+
+1) workcompletion and validateAccess functions have been modified.
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Committing transaction...:   
+Completed: At revision: 445  
+2) Database has been modified for kanoda installer
+3) Set forward 1 for admin and 0 for others
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Model\Table\CheckUserRoleTable.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Model\Table\CheckUserRoleTable.php  
+Committing transaction...:   
+Completed: At revision: 446  
+4) Add project creator first name in getInstallerProject
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Sending content: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Committing transaction...:   
+Completed: At revision: 447  
+5) Guide feni related to email template and review her code.
+6) Registration after apply online view has been modified. Some fields have been added.
+Uploaded to demo and live
+7) Discuss feature with pulkit sir.
+ALTER TABLE `registration_scheme` ADD `payment_mode` TINYINT(1) NOT NULL AFTER `bank_name`;
+ALTER TABLE `registration_scheme` ADD `payment_status` TINYINT(4) NOT NULL AFTER `payment_mode`;
+ALTER TABLE `registration_scheme` ADD `registration_fee` VARCHAR(20) NOT NULL AFTER `payment_status`;
+ALTER TABLE `fesibility_report` ADD `application_fee` VARCHAR(20) NOT NULL AFTER `field_officer`;
+ALTER TABLE `fesibility_report` ADD `capacity_already_connect` TEXT NOT NULL AFTER `application_fee`, ADD `details_capacity` TEXT NOT NULL AFTER `capacity_already_connect`;
+
+
+ALTER TABLE `project_installation` ADD `connectivity_level` VARCHAR(50) NOT NULL AFTER `i_type_other`, ADD `connectivity_level_phase` VARCHAR(50) NOT NULL AFTER `connectivity_level`, ADD `connectivity_level_voltage` VARCHAR(50) NOT NULL AFTER `connectivity_level_phase`;
+
+ALTER TABLE `project_installation` ADD `modules_data` MEDIUMTEXT NOT NULL AFTER `connectivity_level_voltage`, ADD `inverter_data` MEDIUMTEXT NOT NULL AFTER `modules_data`;
+
+1) Working on feasibily report for gujarat.
+2) Execution 3 mmodules and 3 inverter concept has been added on web. Workcompletion entry has been done.
+3) Grid section has been added to execution.
+4) API has been modified for modules and inverter and grid section.
+
+UPDATE `discom_master` SET `short_code` = '1' WHERE `discom_master`.`id` = 466;
+UPDATE `discom_master` SET `short_code` = '2' WHERE `discom_master`.`id` = 467;
+UPDATE `discom_master` SET `short_code` = '3' WHERE `discom_master`.`id` = 469;
+UPDATE `discom_master` SET `short_code` = '4' WHERE `discom_master`.`id` = 468;
+UPDATE `discom_master` SET `short_code` = '5' WHERE `discom_master`.`id` = 470;
+UPDATE `discom_master` SET `short_code` = '6' WHERE `discom_master`.`id` = 471;
+
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '0', '0', '0', '0', '0', '0', '6001', 'GEDA', '', '23d42f5f3f66498b2c8ff4c20b8c5ac826e47146', NULL, 'Gujarat', NULL, 'Gujarat', '4', '12345', 'admin@geda.com', NULL, '9876543210', '', '', '', '0000-00-00 00:00:00.000000', NULL, '1', NULL, '2018-07-06 00:00:00', '0000-00-00 00:00:00.000000');
+
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '0', '0', '', '', '', '', '6003', 'CEI', '', '', 'Gujarat', NULL, NULL, 'Gujarat', '4', '12345', 'admin@cei-gujarat.com', NULL, '9999999999', '', '', '', '0000-00-00 00:00:00.000000', NULL, '1', NULL, '2018-07-16 00:00:00', '2018-07-16 00:00:00');
+
+http://dev-gujarat.ahasolar.in//apply-onlines/fesibility/ec4d673ef9165b1b9144a41e5a13f06156b
+
+1) Update members login id according to .xls done.
+2) fesibility report changes has been done.
+3) Insert execution data from apply online, do registration have been done. Display execution data in apply online has been done.
+4) Geda member account has been created.
+5) Modification in excution API has been done.
+6) Creator logic has been added in project listing and project listing lead API has been done.
+
+
+ALTER TABLE `applyonlin_docs` ADD `doc_type` VARCHAR(10) NOT NULL DEFAULT 'others' COMMENT 'ohters for other document, profile for profile document' AFTER `title`;
+
+ALTER TABLE `apply_onlines` ADD `consumer_email` VARCHAR(100) NOT NULL AFTER `payment_mode`, ADD `consumer_mobile` VARCHAR(15) NOT NULL AFTER `consumer_email`, ADD `installer_email` VARCHAR(100) NOT NULL AFTER `consumer_mobile`, ADD `installer_mobile` VARCHAR(15) NOT NULL AFTER `installer_email`;
+
+1) Profile uplaod feature has been done for web and api.
+2) per consumer , 6 digit validation done
+3) Consumer mobile, consumer email, installer mobile, installer email prefill value has been done.
+validation has been added 
+4) When installer logged in skip tab1 - done
+profile_image,
+consumer_email,
+consumer_mobile,
+installer_email,
+installer_mobile
+4..6..14..-Done
+
+
+ALTER TABLE `apply_onlines` ADD `transmission_line` TINYINT NOT NULL AFTER `installer_mobile`;
+ALTER TABLE `apply_onlines`  ADD `otp` VARCHAR(5) NOT NULL  AFTER `transmission_line`;
+
+CREATE TABLE IF NOT EXISTS `application_sms_log` (
+  `id` int(11) NOT NULL,
+  `application_id` int(11) NOT NULL,
+  `mobile` varchar(15) NOT NULL,
+  `sms_request` text NOT NULL,
+  `sms_response` text NOT NULL,
+  `created` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ALTER TABLE `application_sms_log`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `application_sms_log`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+1) Payment amount with tax included calculation done on apply online according to customer type
+2) Otp SMS send feature has been done when apply online for gujarat. application sms log table has been created and entry done.
+3) application listing has been modified when status varification pending. For gujarat member login if varification pending then wan't display in apply online listing.
+4) Resend OTP feature has been done.
+5) Varify OTP feature has been done.
+
+method:
+http://demo.ahasolar.in/admin/ApplyOnlines/VarifyOtp
+parameters: appid, otp
+
+http://demo.ahasolar.in/admin/ApplyOnlines/resend_otp
+parameters: appid
+
+http://demo.ahasolar.in/admin/ApplyOnlines/paymentfeebycapacity
+parameter: category for gujarat / capacity for others
+
+1) send otp, varify otp api have been created.
+2) paymentfeebycapacity has been modified for gujarat according to customer type - Done
+3) Max 5 installer ar a time can select in project - Done in api
+4) Apply online app_save api has been modified for validation of consumer no and validation of consumer mobile and installer mobile should not same.
+5) state_id has been added in project list, installer projects and installer project list
+6) category id has been pass in list api and view detail api.
+7) installer_email, installer_mobile, consumer email, consumer mobile prefetch parameters have been added in getBillCategory api.
+8) API testing have been done on demo.
+
+
+ALTER TABLE `payumoney` ADD `udf1` VARCHAR(255) NOT NULL AFTER `payment_status`;
+1) payumoney controller has been modified for web and API
+2) View page of applyonline has been modified for frontend and admin panel.
+3) apply_online_list api has been modified for is_payment_required flag, also paymentfeebycapacity has been modified.
+4) Document verified processing has been done. Application status maintain has been done on listing and view.
+5) Geda approval letter function has been created and button display feature has been done on listing.
+
+1) Geda approval letter has been done for gujarat
+2) Feasibility quotation number, estimated amount and estimated due date has been added.
+3) Search by consumer number done for web and API.
+4) Application number field has been added and update query has been done.
+5) Search by application number done for web.
+6) Display application number and consumer number done on listing for web and api
+7) Application nnumber display on view has been done on web and API.
+
+
+ALTER TABLE `fesibility_report` ADD `quotation_number` VARCHAR(50) NOT NULL AFTER `division_approved_date`, ADD `estimated_amount` DECIMAL(10,2) NOT NULL AFTER `quotation_number`, ADD `estimated_due_date` INT NOT NULL AFTER `estimated_amount`;
+
+ALTER TABLE `apply_onlines` ADD `aaplication_no` VARCHAR(255) NOT NULL AFTER `transmission_line`;
+
+1) Gujarat logo have been added. For web gujarat portal header has been modified. login API has been modified.
+2) When fesibility approved then subsidy also approved for gujarat has been done. listing has been modified.
+3) Transmission line has been added in apply online. Validation has been done. view has been modified for gujarat, admin and normal. Changes done for web and api.
+4) CEI approval table has been created. validation has been done for cei drawing and drawing status.
+Partial entry has been done. Listing has been modified for gujarat and normal.
+
+
+CREATE TABLE IF NOT EXISTS `thirdparty_api_log` (
+  `id` int(11) NOT NULL,
+  `application_id` int(11) NOT NULL,
+  `request_data` mediumtext NOT NULL,
+  `response_data` mediumtext NOT NULL,
+  `api_url` text NOT NULL,
+  `created` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ALTER TABLE `thirdparty_api_log`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `thirdparty_api_log`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+  ALTER TABLE `cei_application_details` ADD `updated` DATETIME NOT NULL AFTER `created`;
+
+1) index function has been modified for listing. All lead function has been modified for co worker. File uploaded to demo and live and testing done.
+2) Modified apply online save for web for transmission line.
+3) Common api fetch function has been created in model. cei table add and edit code has been done.
+Fetch status from drawing number and fetch status from cei number has been done.
+4) Trace issue related to customer resend otp feature.
+5) Apply online list has been modified for highlight status for gujarat and for normal.
+6) Approve from GEDA code has been checked and modified.
+
+
+Replace text JREDA and GEDA dynemically for normal listing.
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\LeadsController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\LeadsController.php  
+
+1) Lead section has been modified for remove conditiion from web and API. Creator name has been added in API
+2) Excel sheet for all logins of jharkhand has been created.
+3) Paymentfeebycapacity, is_payment_required has been updated to live.
+4) projects controller state change and getInstallerProjectLead, getInstallerProject state and creator name changes has been done on live.
+5) Applyonline view has been modified on live.
+
+1) Project detail has been modified as per summary form mobile. Code uploaded and tested.
+2) Lead Accepted API code has been modified. Code uploaded and tested.
+3) is contacted logic has been added in API. Code uploaded and tested.
+4) Site survey details calculation section has been done according to monthly billing details and uploaded to live and demo. Testing done.
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Merged: F:\xampp\htdocs\ahasolar\src\Template\Projects\dashboard.ctp  
+Merged: F:\xampp\htdocs\ahasolar\src\Model\Table\ProjectsTable.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\StatesTable.php  
+Merged: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Completed: At revision: 511  
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Conflicted: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ProjectsController.php  
+Completed: At revision: 513  
+Warning!: One or more files are in a conflicted state.
+
+1) Sitesurvey add from website code has been modified for recommanded capacity, payback, avg_monthly_gen, Avg_bill etc.. on demo and live and tested.
+2) GetPaybackChartData has been modified. Done for ahasolar and ahasolar gujarat uplaoded to demo.
+3) temporary bypass work start form live and revert back again
+4) Project detail section has been modified for web.
+5) Download Excel file code has been created for payment done apply online data.
+
+1) payumoney changes uploaded to demo and live testing done.
+2) Validation for transmission power has been modified and uploaded to demo.
+3) Project info page css and modification uploaded to demo and live.
+4) Work start and work execution status has been modified.
+5) Listing and view has been modified for gujarat and normal.
+6) CEI approval number screen has been set up for installer.
+7) CEI inspection status form has been created in cei login.
+8) listing 9 status has been added. css style for progress bar has been modified for gujarat and normal.
+
+1) Meter installation has been setup. View and list application pages have been modified for normal and gujarat.
+2) After work executed Meter installation done and discom approved done automatically. CEI Application number popup will open on installer login. After that CEI Inspection stage and GEDA Approval state will come. For that application list and application view has been modified for normal and geda.
+3) Claim subsidy popup has been creayed and feature has been integrated on installer or customer side. 
+4) Mail and SMS set up has been done for following:
+  - Application submitted
+  - Document verification
+  - Fesibility Approval
+  - Fesibility Rejection
+
+
+  ALTER TABLE `apply_online_approvals` ADD `reason` TEXT NOT NULL AFTER `stage`;
+  1) Reason field has been added to demo and live server.
+  2) Mail and SMS set up has been done for following:
+  - Drawing Applied
+  - CEI drawing Approved
+  3) Discussed new feature with pulkit sir and kalpak sir.
+  4) Work order screen has been modified.
+  5) Apply online list and view has been modified on live server. Work start done when work order filled by website or API.
+
+ALTER TABLE `states`
+ADD `state_code` varchar(5) COLLATE 'latin1_swedish_ci' NOT NULL AFTER `statename`;
+
+1) Generate application number code has been modified on demo and live and already inserted records has been updated on demo and live.
+2) Customer login api has been modified on live and demo.
+3) Modified document verify and verify otp in order to insert record in application approval.
+4) Application list has been modified for select state.
+5) Work order coding has been modified for checking fesibility pending or approved. If apparoved then installer can start work. SMS and mail has been done for web and api. Code uploaded to demo and testing done.
+6) Working on generate geda application number.
+
+ALTER TABLE `apply_onlines` ADD `geda_application_no` VARCHAR(50) NOT NULL AFTER `otp`;
+
+1) generation of geda registration number done
+2) Working on execution report (project completion report)
+3) Admin side Dashboard has been modified.
+4) Sitesurvey has been checked from ios, anroid and web.
+5) Professional version api of installers has been modified.
+
+ALTER TABLE `project_installation`  ADD `meter_manufacture` VARCHAR(100) NOT NULL  AFTER `attach_aadhar_card`,  ADD `meter_serial_no` VARCHAR(50) NOT NULL  AFTER `meter_manufacture`,  ADD `solar_meter_manufacture` VARCHAR(100) NOT NULL  AFTER `meter_serial_no`,  ADD `solar_meter_serial_no` VARCHAR(50) NOT NULL  AFTER `solar_meter_manufacture`;
+
+1) Meter related fields has been added to demo and live server.
+2) Add and edit of field have been done
+3) undestand/meeting for project flow of lets recycle
+4) Import database of lets recycle
+5) Validation has been added related to cumulative module and cumulative inverter also one module and one inverter is mandatory added.
+
+1) view apply online has been modified for web and api. Only applied person can see adhar card number and image. Uploaded to live and demo and testing done.
+2) Database chunks dump have been created.
+3) Lets recycle admin has been set up for lower version of php.
+4) Current project set up has been done.
+5) Try to set up laravel for LR.
+
+1) Study the existing code for manageuserrights
+2) study the existing table sturcture for user permission and role.
+3) Meeting attended for themes, layout and masters
+4) Try to upgrade php version for laravel setup
+5) Try to set up latest xampp version
+
+
+https://appdividend.com/2018/02/24/laravel-jwt-authentication-tutorial/
+
+
+CREATE TABLE `application_inspection_report` (
+  `id` bigint(32) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `application_id` bigint(32) unsigned NOT NULL,
+  `inspection_type` tinyint(2) unsigned NOT NULL COMMENT '1-Discom, 2-CEI, 3-Govt Authority',
+  `inspection_report_date` datetime NOT NULL,
+  `created` datetime NOT NULL,
+  `created_by` bigint(10) unsigned NOT NULL COMMENT 'Created By Member ID',
+  `updated` datetime NOT NULL,
+  `updated_by` bigint(10) unsigned NOT NULL COMMENT 'Updated By Member ID'
+) COMMENT='Table keeps information related to inspection report submitted by various members' ENGINE='InnoDB' COLLATE 'utf8_general_ci';
+
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\AppController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\CustomersController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\applyonline_list.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Admin\Customers\index.ctp  
+Added: F:\xampp\htdocs\ahasolar\src\Template\Element\applyonlineindustrial.ctp  
+Added: F:\xampp\htdocs\ahasolar\src\Template\Element\applyonlineresidencial.ctp  
+Added: F:\xampp\htdocs\ahasolar\src\Template\Element\discominspection.ctp  
+Completed: At revision: 561  
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Added: F:\xampp\htdocs\ahasolar\webroot\pdf\images\geda.png  application/octet-stream
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Element\discominspection.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\AppController.php  
+Completed: At revision: 563  
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Model\Table\ApplyOnlineApprovalsTable.php  
+Added: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Model\Table\InspectionReportTable.php  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\ApplyOnlines\applyonline_list.ctp  
+Added: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\Element\geda_approval_form.ctp  
+Added: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\Element\pdf-template  
+Added: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\Element\pdf-template\geda_approval_form.ctp  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Controller\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Controller\AppController.php  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\config\routes.php  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\webroot\css\frontend\custom.css  
+Completed: At revision: 567  
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Leads\index.ctp  
+Added: F:\xampp\htdocs\ahasolar\src\Template\Admin\Subsidy  
+Added: F:\xampp\htdocs\ahasolar\src\Template\Admin\Subsidy\index.ctp  
+Added: F:\xampp\htdocs\ahasolar\src\Template\Admin\Subsidy\manage.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Admin\InstallerCompanies\view.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Element\footer.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\LeadsNotesTable.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\StateSubsidyTable.php  
+Merged: F:\xampp\htdocs\ahasolar\src\Model\Table\ApplyOnlinesTable.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\AdminactionTable.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\LeadsController.php  
+Added: F:\xampp\htdocs\ahasolar\src\Controller\Admin\SubsidyController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallerCompaniesController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Component\UserrightComponent.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\AppController.php  
+Updated: F:\xampp\htdocs\ahasolar\webroot\css\admin_custom.css  
+Completed: At revision: 582  
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\CustomersController.php  
+Conflicted: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallerCompaniesController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Admin\Customers\index.ctp  
+Added: F:\xampp\htdocs\ahasolar\src\Template\Admin\Customers\upgradetoprof.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\InstallerPlansTable.php  
+Completed: At revision: 591  
+Warning!: One or more files are in a conflicted state.  
+
+
+CREATE TABLE IF NOT EXISTS `application_api_log` (
+  `id` bigint(20) NOT NULL,
+  `application_id` int(11) NOT NULL,
+  `api_request` longtext NOT NULL,
+  `api_response` longtext NOT NULL,
+  `api_url` varchar(255) NOT NULL,
+  `created` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `application_api_log`
+--
+ALTER TABLE `application_api_log`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `application_api_log`
+--
+ALTER TABLE `application_api_log`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+
+
+ALTER TABLE `thirdparty_api_log` ADD `project_id` INT NOT NULL AFTER `application_id`;
+
+4th-Sep-2018
+1) Help feni related premises document validation. Discussed some requirement
+2) Geda server api calling feature has been setup. Token generation code done. pass token in curl header done. Post parameter setup done. calling curl done. thirdparty api log table has been modified for project_id. thirdparty_api_log entry code has been done.
+3) ETA has been decide.
+4) First project tab has been added when project not created. Create project logic done. After that second tab open. Validation has been added.
+
+
+Basic setup has been done in order to call GEDA server API - 5 Hours
+After fetching response set those response to perticular fields - 8 hours
+
+Waiting list management - 7 Hours
+Cancelled application
+
+5th-Sep-2018
+
+CREATE TABLE IF NOT EXISTS `block_list` (
+  `id` bigint(20) NOT NULL,
+  `discom` int(11) NOT NULL,
+  `consumer_no` varchar(100) NOT NULL,
+  `category` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `updated` datetime NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+ALTER TABLE `block_list`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `block_list`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+
+
+CREATE TABLE IF NOT EXISTS `installer_category` (
+  `id` int(11) NOT NULL,
+  `category_name` varchar(100) NOT NULL,
+  `capacity` decimal(10,2) NOT NULL,
+  `created` datetime NOT NULL,
+  `updated` datetime NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+ALTER TABLE `installer_category`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `installer_category`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- Dumping data for table `installer_category`
+--
+
+INSERT INTO `installer_category` (`id`, `category_name`, `capacity`, `created`, `updated`) VALUES
+(1, 'Category A', '110.00', '2018-09-05 00:00:00', '2018-09-05 00:00:00'),
+(2, 'Category B', '15.00', '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+
+CREATE TABLE IF NOT EXISTS `installer_category_mapping` (
+  `id` bigint(20) NOT NULL,
+  `installer_id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ALTER TABLE `installer_category_mapping`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `installer_category_mapping`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+
+1) Validation has been added for project add in apply online.
+2) Block list table has been created. Validation for block list consumer number has been added.
+3) installer_category table has been created. installer category mapping table has been created. Waiting list status has been added in approval model. Waiting list code has been implemented.
+4) Mysql query has beenn created for list of all members with discom name, type, email, title, shortcode, area, cicle, division name in excel format.
+5) Apply online list on discom and cei login has been modified for gujarat.
+
+
+
+SELECT dm.title,dm.short_code,dm.type,m.name,m.area,m.circle,m.division,m.subdivision,m.section FROM `discom_master` as dm left join members as m on dm.id=m.area WHERE dm.`id` >= 466 and dm.state_id=4 and m.area is not null
+
+
+SELECT dm.title,dm.short_code,dm.type,m.name,m.area,m.circle,m.division,m.subdivision,m.section FROM members as m left join `discom_master` as dm  on (m.area=dm.id and m.circle=0) WHERE dm.`id` >= 466 and dm.state_id=4
+Union
+SELECT dm.title,dm.short_code,dm.type,m.name,m.area,m.circle,m.division,m.subdivision,m.section FROM members as m left join `discom_master` as dm  on (m.circle=dm.id and m.division=0) WHERE dm.`id` >= 466 and dm.state_id=4
+Union
+SELECT dm.title,dm.short_code,dm.type,m.name,m.area,m.circle,m.division,m.subdivision,m.section FROM members as m left join `discom_master` as dm  on (m.division=dm.id and m.subdivision=0) WHERE dm.`id` >= 466 and dm.state_id=4
+Union
+SELECT dm.title,dm.short_code,dm.type,m.name,m.area,m.circle,m.division,m.subdivision,m.section FROM members as m left join `discom_master` as dm  on (m.subdivision=dm.id and m.section=0) WHERE dm.`id` >= 466 and dm.state_id=4
+
+//m.area,m.circle,m.division,m.subdivision,m.section,m.name
+
+SELECT dm.id,dm.title,dm.short_code,'Area' as type_data,m.email,'' as area_title,'' as circle_title,'' as division_title FROM members as m left join `discom_master` as dm  on (m.area=dm.id and m.circle=0) WHERE dm.`id` >= 466 and dm.state_id=4
+Union
+SELECT dm.id,dm.title,dm.short_code,'Circle' as type_data,m.email,dm1.title as area_title,'' as circle_title,'' as division_title FROM members as m left join `discom_master` as dm  on (m.circle=dm.id and m.division=0) left join `discom_master` as dm1 on m.area=dm1.id WHERE dm.`id` >= 466 and dm.state_id=4
+Union
+SELECT dm.id,dm.title,dm.short_code,'Division' as type_data,m.email,dm1.title as area_title,dm2.title as circle_title,'' as division_title FROM members as m left join `discom_master` as dm  on (m.division=dm.id and m.subdivision=0) left join `discom_master` as dm1 on m.area=dm1.id left join `discom_master` as dm2 on m.circle=dm2.id WHERE dm.`id` >= 466 and dm.state_id=4
+Union
+SELECT dm.id,dm.title,dm.short_code,'Subdivision' as type_data,m.email,dm1.title as area_title,dm2.title as circle_title,dm3.title as division_title FROM members as m left join `discom_master` as dm  on (m.subdivision=dm.id and m.section=0) left join `discom_master` as dm1 on m.area=dm1.id left join `discom_master` as dm2 on m.circle=dm2.id left join `discom_master` as dm3 on m.division=dm3.id WHERE dm.`id` >= 466 and dm.state_id=4
+
+
+
+UPDATE `members` SET `email` = 'TA1000' WHERE `members`.`id` = 497;
+UPDATE `members` SET `email` = 'TS1000' WHERE `members`.`id` = 498;
+UPDATE `discom_master` SET
+`id` = '470',
+`areacode` = NULL,
+`type` = '1',
+`area` = NULL,
+`circle` = NULL,
+`division` = NULL,
+`subdivision` = NULL,
+`state_id` = '4',
+`title` = 'Torrent Power Ahmedabad',
+`short_code` = 'TA1',
+`created` = '2018-06-27 02:00:04',
+`created_by` = '1',
+`modified` = '2018-06-27 02:00:04',
+`modified_by` = '1'
+WHERE `id` = '470';
+UPDATE `discom_master` SET
+`id` = '471',
+`areacode` = NULL,
+`type` = '1',
+`area` = NULL,
+`circle` = NULL,
+`division` = NULL,
+`subdivision` = NULL,
+`state_id` = '4',
+`title` = 'Torrent Power Surat',
+`short_code` = 'TS1',
+`created` = '2018-06-27 02:00:05',
+`created_by` = '1',
+`modified` = '2018-06-27 02:00:05',
+`modified_by` = '1'
+WHERE `id` = '471';
+
+UPDATE `discom_master` SET `areacode` = '0' WHERE `discom_master`.`id` = 1220;
+
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '2', '470', NULL, NULL, NULL, '4', 'Corporate-circle1', '1', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '2', '470', NULL, NULL, NULL, '4', 'Corporate-circle2', '2', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '2', '470', NULL, NULL, NULL, '4', 'Corporate-circle3', '3', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '2', '470', NULL, NULL, NULL, '4', 'Corporate-circle4', '4', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '2', '470', NULL, NULL, NULL, '4', 'Corporate-circle5', '5', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '2', '470', NULL, NULL, NULL, '4', 'Corporate-circle6', '6', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '2', '470', NULL, NULL, NULL, '4', 'Corporate-circle7', '7', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+
+
+
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1220', '0', '0', '0', '6002', 'Corporate-circle1', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1100', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1221', '0', '0', '0', '6002', 'Corporate-circle2', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1200', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1222', '0', '0', '0', '6002', 'Corporate-circle3', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1300', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1223', '0', '0', '0', '6002', 'Corporate-circle4', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1400', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1224', '0', '0', '0', '6002', 'Corporate-circle5', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1500', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1225', '0', '0', '0', '6002', 'Corporate-circle6', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1600', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1226', '0', '0', '0', '6002', 'Corporate-circle7', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1700', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+
+
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '3', '470', 1220, NULL, NULL, '4', 'Corporate-division1', '1', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '3', '470', 1221, NULL, NULL, '4', 'Corporate-division2', '2', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '3', '470', 1222, NULL, NULL, '4', 'Corporate-division3', '3', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '3', '470', 1223, NULL, NULL, '4', 'Corporate-division4', '4', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '3', '470', 1224, NULL, NULL, '4', 'Corporate-division5', '5', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '3', '470', 1225, NULL, NULL, '4', 'Corporate-division6', '6', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '3', '470', 1226, NULL, NULL, '4', 'Corporate-division7', '7', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1220', '1227', '0', '0', '6002', 'Corporate-division1', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1110', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1221', '1228', '0', '0', '6002', 'Corporate-division2', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1220', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1222', '1229', '0', '0', '6002', 'Corporate-division3', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1330', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1223', '1230', '0', '0', '6002', 'Corporate-division4', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1440', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1224', '1231', '0', '0', '6002', 'Corporate-division5', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1550', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1225', '1232', '0', '0', '6002', 'Corporate-division6', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1660', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1226', '1233', '0', '0', '6002', 'Corporate-division7', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1770', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '4', '470', 1220, 1227, NULL, '4', 'Amraiwadi Zone', '1', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '4', '470', 1221, 1228, NULL, '4', 'City Zone', '2', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '4', '470', 1222, 1229, NULL, '4', 'Naroda sub Zone', '3', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '4', '470', 1223, 1230, NULL, '4', 'Gandhi nagar Zone', '4', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '4', '470', 1224, 1231, NULL, '4', 'Naranpura Zone', '5', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '4', '470', 1225, 1232, NULL, '4', 'Shrinand Nagar Sub Zone', '6', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '4', '470', 1226, 1233, NULL, '4', 'Motera Sub Zone', '7', '2018-09-05 00:00:00', '1', '2018-09-05 00:00:00', '1');
+
+
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1220', '1227', '1234', '0', '6002', 'Amraiwadi Zone', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1111', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1221', '1228', '1235', '0', '6002', 'City Zone', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1222', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1222', '1229', '1236', '0', '6002', 'Naroda sub Zone', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1333', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1223', '1230', '1237', '0', '6002', 'Gandhi nagar Zone', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1444', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1224', '1231', '1238', '0', '6002', 'Naranpura Zone', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1555', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1225', '1232', '1239', '0', '6002', 'Shrinand Nagar Sub Zone', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1666', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '15', '470', '1226', '1233', '1240', '0', '6002', 'Motera Sub Zone', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TA1777', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+
+
+
+
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '2', '471', NULL, NULL, NULL, '4', 'Corporate-circle1', '1', '2018-09-06 00:00:00', '1', '2018-09-06 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '2', '471', NULL, NULL, NULL, '4', 'Corporate-circle2', '2', '2018-09-06 00:00:00', '1', '2018-09-06 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '2', '471', NULL, NULL, NULL, '4', 'Corporate-circle3', '3', '2018-09-06 00:00:00', '1', '2018-09-06 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '2', '471', NULL, NULL, NULL, '4', 'Corporate-circle4', '4', '2018-09-06 00:00:00', '1', '2018-09-06 00:00:00', '1');
+
+
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '16', '471', '1241', '0', '0', '0', '6002', 'Corporate-circle1', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TS1100', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '16', '471', '1242', '0', '0', '0', '6002', 'Corporate-circle2', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TS1200', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '16', '471', '1243', '0', '0', '0', '6002', 'Corporate-circle3', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TS1300', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '16', '471', '1244', '0', '0', '0', '6002', 'Corporate-circle4', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TS1400', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+
+
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '3', '471', 1241, NULL, NULL, '4', 'Corporate-division1', '1', '2018-09-06 00:00:00', '1', '2018-09-06 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '3', '471', 1242, NULL, NULL, '4', 'Corporate-division2', '2', '2018-09-06 00:00:00', '1', '2018-09-06 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '3', '471', 1243, NULL, NULL, '4', 'Corporate-division3', '3', '2018-09-06 00:00:00', '1', '2018-09-06 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '3', '471', 1244, NULL, NULL, '4', 'Corporate-division4', '4', '2018-09-06 00:00:00', '1', '2018-09-06 00:00:00', '1');
+
+UPDATE `members` SET `email` = 'TS1220' WHERE `members`.`id` = 1273;
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '16', '471', '1241', '1245', '0', '0', '6002', 'Corporate-division1', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TS1110', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '16', '471', '1242', '1246', '0', '0', '6002', 'Corporate-division2', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TS1220', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '16', '471', '1243', '1247', '0', '0', '6002', 'Corporate-division3', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TS1330', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '16', '471', '1244', '1248', '0', '0', '6002', 'Corporate-division4', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TS1440', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-05 00:00:00', '2018-09-05 00:00:00');
+
+
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '4', '471', 1241, 1245, NULL, '4', 'Area 1', '1', '2018-09-06 00:00:00', '1', '2018-09-06 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '4', '471', 1242, 1246, NULL, '4', 'Area 2', '2', '2018-09-06 00:00:00', '1', '2018-09-06 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '4', '471', 1243, 1247, NULL, '4', 'Area 3', '3', '2018-09-06 00:00:00', '1', '2018-09-06 00:00:00', '1');
+INSERT INTO `discom_master` (`id`, `areacode`, `type`, `area`, `circle`, `division`, `subdivision`, `state_id`, `title`, `short_code`, `created`, `created_by`, `modified`, `modified_by`) VALUES (NULL, 0, '4', '471', 1244, 1248, NULL, '4', 'Area 4', '4', '2018-09-06 00:00:00', '1', '2018-09-06 00:00:00', '1');
+
+
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '16', '471', '1241', '1245', '1249', '0', '6002', 'Area 1', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TS1111', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-06 00:00:00', '2018-09-06 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '16', '471', '1242', '1246', '1250', '0', '6002', 'Area 2', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TS1222', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-06 00:00:00', '2018-09-06 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '16', '471', '1243', '1247', '1251', '0', '6002', 'Area 3', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TS1333', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-06 00:00:00', '2018-09-06 00:00:00');
+INSERT INTO `members` (`id`, `branch_id`, `area`, `circle`, `division`, `subdivision`, `section`, `member_type`, `name`, `designation`, `password`, `address1`, `address2`, `address3`, `city`, `state`, `zip`, `email`, `member_email`, `mobile`, `landline`, `activation_code`, `usertype`, `last_login_date`, `notes`, `status`, `ref_emp_id`, `created`, `modified`) VALUES (NULL, '16', '471', '1244', '1248', '1252', '0', '6002', 'Area 4', '', '', NULL, NULL, NULL, NULL, '4', NULL, 'TS1444', NULL, '', '', '', '', '0000-00-00 00:00:00.000000', '', '1', 0, '2018-09-06 00:00:00', '2018-09-06 00:00:00');
+
+
+update `members` set member_type=6002 WHERE `member_type` = 6003 and id>=1247 ORDER BY `id` DESC
+
+
+5th-Sep-2018
+
+1) Validation has been added for project add in apply online.
+2) Block list table has been created. Validation for block list consumer number has been added.
+3) installer_category table has been created. installer category mapping table has been created. Waiting list status has been added in approval model. Waiting list code has been implemented.
+4) Mysql query has beenn created for list of all members with discom name, type, email, title, shortcode, area, cicle, division name in excel format.
+5) Apply online list on discom and cei login has been modified for gujarat.
+6) Import ahamedabad torrent data for discom master and member master have been done.
+
+
+6th-Sep-2018
+1) Import surat torrent data for discom and members have been done
+2) Discussed points with feni, priteshbhai and hardik bhai
+3) When logged in as consumer apply online has been modified.
+4) Application number modification for gujarat has been done.
+5) API call method get_consumer_details has been implemented for apply online search. Response data mapped with first name, last name, address, load, category, transmission line has been mapped.
+6) uploaded consumer details code to demo server. 
+
+
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Restored: F:\xampp\htdocs\ahasolar\src\Controller\InstallerCategoryMappingTable.php  
+Restored: F:\xampp\htdocs\ahasolar\src\Controller\InstallerCategoryTable.php  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Model\Table\ApplyOnlineApprovalsTable.php  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Model\Table\LeadsNotesTable.php  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Controller\Admin\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Controller\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Controller\AppController.php  
+Added: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\Email\html\geda_approval.ctp  
+Added: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\Email\html\rejected_geda.ctp  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\Element\applyonline.ctp  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\ApplyOnlines\applyonline_list.ctp  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\ApplyOnlines\view.ctp  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\config\whitelable.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\ApplyOnlinesTable.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Model\Table\ApplyOnlineApprovalsTable.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\AppController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\doregistration.ctp  
+Merged: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\applyonline_list.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Element\applyonline.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Projects\execution.ctp  
+Added: F:\xampp\htdocs\ahasolar\webroot\pdf\images\2_4.png  application/octet-stream
+Completed: At revision: 639  
+
+7th-Sep-2018
+
+1.5 hours
+1) Discussed the group access to user issue with axay.
+2) Integrated tree structure of user group allowed and menu code has been modified.
+
+7.25 Hours
+1) Discussed geda approval feature with feni.
+2) Apply online controller has been modified for create project.
+3) Import data from .excle files DGVCL, MGVCL, UGVCL, PGVCL. Write script in order to modified old record if short code exist and insert data into members and discom master
+
+10th-Sep-2018
+8.45 Hours
+1) Fetch the data from guvnl server and mapped to current fields for web has been done with discom list and selected discom from discom short code.
+2) cei drawing approval feature using api has been done and if status completed then CEI approval done automatically,
+3) cei inspection api has been done and if status completed then CEI inspection done automatically.
+4) Help feni related validations and explain api concept.
+5) Send message application number issue has been resolved on gujarat.
+
+
+Remian to upload live
+UPDATE `parameters` SET `para_value` = 'Others' WHERE `parameters`.`para_id` = 3005;
+UPDATE `parameters` SET `para_value` = 'Residential' WHERE `parameters`.`para_id` = 3001;
+
+
+11th-Sep-2018 (8:45 Hours)
+1) search API from consumer number and discom has been added to applyonline mobile api. Mapping data has been done. Uploaded to demo server and tested.
+2) Phase data and customer category mapping array has been defined. Customer type has been modified Others instead of Agriculture and Residential instead of Residental
+3) Installer category mapping table uploaded to dev and demo server. Alter table installer done for dev and demo. Installer slots array has been defined. Validation function for slot has been created. index.ctp tooltip has been added for installer band availability. Uploaded to demo and tested
+4) Validation message return to mobile api for apply online has been done.
+5) Gujarat portal header has been modified. Working on sticky logo.
+
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\Admin\InstallersController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\index.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Admin\InstallerCompanies\view.ctp  
+Added: F:\xampp\htdocs\ahasolar\src\Shell\CheckFesibilityStatusShell.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Shell\SendpdforexcelShell.php  
+Added: F:\xampp\htdocs\ahasolar\src\Shell\CancelApplicationQuerySentShell.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Shell\CancelApplicationShell.php  
+Completed: At revision: 675  
+
+
+
+12th-Sep-2018 (8:45 Hours)
+1) Sticky logo setup on gujarat portal has been done. header modification done on gujarat portal. header modification on general portal related logo and sticky logos have been done.
+2) checking the guvnl apis
+3) Help feni related path issue in gujarat portal
+4) Find the issue of consumer number details issue in fetch data from api and .xls file provided
+5) CEI api url has been updated as per given live urls.
+6) Work order and exection button has been added on apply online listing.
+7) Fesibility report modal function has been created when application is passed then using fesibility api field report submitted and fesibility approved, subsidy approved status have been done sms and mail has been implemented.
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\index.ctp  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Model\Table\ApplyOnlinesTable.php  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Controller\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\ApplyOnlines\applyonline_list.ctp  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\ApplyOnlines\index.ctp  
+Completed: At revision: 687  
+
+13th-Sep-2018 (8:30 Hours)
+
+1) ValidateApplicationPayment function has been created for fesibility report.
+2) discussed edit button changes with feni
+3) approved payment button display code on gujarat portal has been done. Work start and execution will done after payment approved done.
+4) meter installation api has been implemented. charging certificate entry and sms and mail have been done.
+5) Gujarat portal new setup has been done. Database has been imported and truncate unwanted data.
+
+truncate table `applyonline_payment`;
+truncate table `application_sms_log`;
+truncate table `applyonline_messages`;
+truncate table `application_inspection_report`;
+truncate table `applyonlin_docs`;
+truncate table `apply_onlines`;
+truncate table `apply_online_approvals`;
+truncate table `cei_application_details`;
+truncate table `charging_certificate`;
+truncate table `customer_projects`;
+delete from `discom_master` where state_id!=4;
+truncate table `email_log`;
+truncate table `fesibility_report`;
+truncate table `installer_projects`;
+truncate table `leads`;
+truncate table `leads_notes`;
+truncate table `lead_documents`;
+delete from `members` where state!=4;
+truncate table `payumoney`;
+SET FOREIGN_KEY_CHECKS = 0; 
+TRUNCATE table projects; 
+SET FOREIGN_KEY_CHECKS = 1;
+truncate table `project_assign_bd`;
+truncate table `project_commercial`;
+truncate table `project_commissioning`;
+truncate table `project_commissioning_data`;
+truncate table `project_commissioning_photo`;
+truncate table `project_installation`;
+truncate table `project_installation_photos`;
+truncate table `project_notes`;
+truncate table `project_proposal`;
+truncate table `project_survey`;
+truncate table `project_survey_photos`;
+truncate table `project_workorder`;
+truncate table `registration_scheme`;
+truncate table `registration_scheme_docs`;
+truncate table `sitesurvey_project_request`;
+truncate table `thirdparty_api_log`;
+truncate table `workcompletion`;
+truncate table `workcompletion_docs`;
+
+delete  FROM `customers` WHERE id not in(52,53,78,127,150,510,2228,508,2201,2233,2235,135) and customer_type='customer' and installer_id=0
+
+ALTER TABLE `fesibility_report` ADD `payment_date` DATE NOT NULL AFTER `payment_approve`;
+
+
+ALTER TABLE `project_workorder`
+DROP FOREIGN KEY `project_workorder_ibfk_2`,
+ADD FOREIGN KEY (`installer_id`) REFERENCES `installers` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+
+ALTER TABLE `project_installation`
+DROP FOREIGN KEY `project_installation_ibfk_2`,
+ADD FOREIGN KEY (`installer_id`) REFERENCES `installers` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\applyonline_list.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\index.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\ApplyOnlines\view.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Template\Element\frontend\header.ctp  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Controller\InstallersController.php  
+Updated: F:\xampp\htdocs\ahasolar\src\Shell\CancelApplicationShell.php  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\ApplyOnlines\index.ctp  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\ApplyOnlines\view.ctp  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\Element\frontend\header.ctp  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Template\Element\frontend\footer.ctp  
+Updated: F:\xampp\htdocs\ahasolar\ahasolar_gujarat\src\Controller\ApplyOnlinesController.php  
+Completed: At revision: 700  
+
+14th-Sep-2018 (8:30 Hours)
+1) Compare apply online controller, apply online model, apply online approval model, apply online index.ctp, project model, installer category model, installer category mapping modle files and merge the code. 
+2) Apply onlne list compare and merge the code. Varify OTP, Resend OTP, Document varification done.
+3) Feasibility report, fesibility approved done for gujarat.
+
+
+1) Work start, Work execution, CEI drawinf number, CEI Drawing approval, CEI appliation number, CEI appliction approval, meter installation, subsidy claim merge the code.
+2) Execution 12.  Don’t allow +5% in capacity for 3 threshold capacities
+a.  6 kW
+b.  10 kW
+c.  100 kW
+has been added
+3) Discom inspection code has been merge
+4) code and database uploaded with demo gujarat portal. Some admin menu hide.
+5) testing application submitted to subsidy claim stage for application. Google map key has been added.
+6) consumer mobile can applied maximum 3 times validation done. Fesibility report has been modified.
+
+UPDATE `admintransactions` SET `insubmenu` = 'N' WHERE `id` = '4001';
+UPDATE `admintransactions` SET `insubmenu` = 'N' WHERE `id` = '6001';
+UPDATE `admintransactions` SET `insubmenu` = 'N' WHERE `id` = '7001';
+UPDATE `admintransactions` SET `insubmenu` = 'N' WHERE `id` = '1400';
+
+delete from `installers` WHERE `state` not LIKE '%gujarat%';
+delete FROM `installers` where state is null
+delete from `customers` WHERE `state` != '4';
+
+ALTER TABLE `applyonlin_docs`
+CHANGE `doc_type` `doc_type` varchar(20) COLLATE 'utf8_general_ci' NOT NULL DEFAULT 'others' COMMENT 'ohters for other document, profile for profile document' AFTER `title`;
+
+ALTER TABLE `charging_certificate`
+ADD `bi_directional_meter` varchar(255) NULL AFTER `agreement_date`,
+ADD `solar_meter` varchar(255) NULL AFTER `bi_directional_meter`;
+
+INSERT INTO `installer_plans` (`plan_name`, `plan_price`, `user_limit`, `status`, `created`, `modified`, `created_by`, `modified_by`)
+VALUES ('FREE UPGRADE', '0.00', '3', '1', '2018-09-21 19:23:19', '2018-09-21 19:23:19', '1', '1');
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Restored: F:\xampp\htdocs\ahasolar\gujarat\tmp\cache\models\myapp_cake_model_default_installer_projects  
+Restored: F:\xampp\htdocs\ahasolar\gujarat\tmp\cache\models\myapp_cake_model_default_thirdparty_api_log  
+Restored: F:\xampp\htdocs\ahasolar\gujarat\tmp\cache\models\myapp_cake_model_default_application_sms_log  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Static\contact_us.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Element\frontend\header.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Element\frontend\footer.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Projects\index.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Users\index.ctp  
+Completed: At revision: 753  
+
+Command: Commit  
+Modified: F:\xampp\htdocs\ahasolar\config\constants.php  
+Modified: F:\xampp\htdocs\ahasolar\gujarat\config\constants.php  
+Modified: F:\xampp\htdocs\ahasolar\gujarat\src\Model\Table\ApplyOnlinesTable.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Admin\UserrolesController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\Api\CustomersController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\MemberController.php  
+Modified: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+Deleting: F:\xampp\htdocs\ahasolar\src\Template\Email\html\fesibility_approval.ctp  
+Deleting: F:\xampp\htdocs\ahasolar\src\Template\Email\html\geda_approval.ctp  
+Modified: F:\xampp\htdocs\ahasolar\src\Template\Member\index.ctp  
+Modified: F:\xampp\htdocs\ahasolar\vendor\payumoney\payu.php  
+Modified: F:\xampp\htdocs\ahasolar\webroot\index.php  
+Sending content: F:\xampp\htdocs\ahasolar\config\constants.php  
+: F:\xampp\htdocs\ahasolar\vendor\payumoney\payu.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\ApplyOnlinesController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\MemberController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\ProjectsController.php  
+: F:\xampp\htdocs\ahasolar\webroot\index.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Admin\UserrolesController.php  
+: F:\xampp\htdocs\ahasolar\src\Controller\Api\CustomersController.php  
+: F:\xampp\htdocs\ahasolar\gujarat\config\constants.php  
+: F:\xampp\htdocs\ahasolar\src\Template\Member\index.ctp  
+: F:\xampp\htdocs\ahasolar\gujarat\src\Model\Table\ApplyOnlinesTable.php  
+Committing transaction...:   
+Completed: At revision: 754  
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar\gujarat  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Model\Table\ApplyOnlineApprovalsTable.php  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\ApplyOnlines\applyonline_list.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Projects\index.ctp  
+Completed: At revision: 755  
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\config\constants.php  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\config\whitelable.php  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Email\html\work_executed.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Email\html\work_starts.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Element\frontend\header.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Model\Table\ApplyOnlinesTable.php  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Model\Table\FesibilityReportTable.php  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Controller\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Controller\ProjectsController.php  
+Completed: At revision: 757  
+
+93 Hours
+
+18th-Sep-2018 (8:45 Hours)
+1) Start making document of LR related to Customer, Appointment section. Discussed proe group and product mapping concept with akshay and kalpak sir.
+2) Formmating of index.ctp inside apply online has been done. Apply online listing formatting has been done.
+3) Using API Feasibility approved done when clicked on feasibility button.
+4) Stage interchange meter installation and CEI inspection done
+5) Discussed flow with feni and check code and help
+
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar\gujarat  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\ApplyOnlines\applyonline_list.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\ApplyOnlines\chargingcertificate.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Controller\ApplyOnlinesController.php  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Model\Table\FesibilityReportTable.php  
+Completed: At revision: 777  
+
+
+
+19th-Sep-2018 (8:45 Hours)
+1) Database table customers and installer expect gujarat have been removed. Code uploaded to demo server and tested.
+2) Formatting for execution page has been done. cumulative inverter and capacity display digit have been modified.
+3) Help feni to resolved meter installation page error.
+4) Apply online index page readonly feature has been done when refresh page.
+5) Feasibility approved when click on fesibility report and data came from API. Project create has been done.
+6) When click on Meter installation report and data came from API then meter installation done
+7) Test whole the functionality on demo server.
+8) Working on social sector email format
+
+20th-Sep (3:5 Hours)
+1) Get latest code for letsrecycle, Discussed city login and try to set up login as city concept.
+
+21st-Sep
+1) Italic font has been set up to social sector pdf file. format has been modified for last page and ref. text
+2) Table imported from live to demo unwanted records have been deleted.
+3) feasibility cron script has been modified. Meter installation, CEI Drawing Approval and CEI Inspection Approval shall script have been created. Cron script testing done.
+4) Admin side Projects section datatable error has been resolved.
+
+22nd-Sep
+1) All gujarat code uploaded to live server. Config setup done. Checking the issue of fonts in PDF. Test all the cases of applyonline from installer and member login
+
+24th-Sep (5.5 Hours)
+1) Header modification has been done.
+2) Font issue for PDF in live geda server has been resolved
+3) Help feni related installer category mapping section.
+4) Customer not able to login from geda portal - Done on demo and liver server. Adminer not access from ip address other than office - Done on live server.
+5) Apply online listing application status drop down has been modified. Search query related to application status has been done
+(3 Hours)
+1) Discussed LR points with kalpak sir, Axay and Hareshbhai
+2) Working on logged in as city concept.
+
+25th-Sep (7 Hours)
+1) Document not verified status has been added in apply online list status dropdown and modified query related to document not verified status
+2) Help feni related to design. Assign slot display section.
+3) Installer table has been imported and remove data where stateflg!=4
+4) Apply online controller has been changes and stateflg has been added instead  of state name
+5) Working on shell script for cancel application.
+(2 Hours)
+1) city_id has been in token and retrive city from token and replace city with existing city of logged in user
+2) City list has been added to franchise dropdown at the time of login.
+
+
+26th-Sep (9 Hours)
+1) Cancel application shell code has been modified and cancel application query sent shell code has been modified. Testing done
+2) When torrent ahmedabad and torrent surat has been selected as discom thirdparty api call make off and division listing has been modified.
+3) remove readonly from first name, last name and middle name when discom like torrent ahmedabad and torrent surat. 
+4) single phase, 3 phase issue from api and reload have been done.
+5) Working on cron script related to Send pdf and excel.
+
+
+ALTER TABLE `apply_onlines` ADD `location_proposed` VARCHAR(10) NOT NULL AFTER `disclaimer_subsidy`;
+ALTER TABLE `apply_onlines` CHANGE `location_proposed` `location_proposed` VARCHAR(10) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+27th-Sep
+1) checking the application with gives XML errror.
+2) salutation has been checked for different different cases.
+3) First name, middle name, last name has been filled or not from API has been tested. 
+4) When edit application and application not saved and data exist in api_response then display all data from api response.
+5) When torrent ahmedabad and torrent gujarat selected then subdivision text display according to division.
+6) PV capacity assign slot array has been modified and display error section has been modified.
+7) Last name validation has been removed.
+8) Apply online error log has been created. When application error ocurred then insert record in apply online table
+9) discom wise excel sheet has been created.
+10) create project validation has been modified.
+
+/branches/WebApplication/src/gujarat/src/Model/Table/InstallersTable.php
+/branches/WebApplication/src/gujarat/src/Template/ApplyOnlines/index.ctp
+/branches/WebApplication/src/gujarat/src/Template/ApplyOnlines/view.ctp
+/branches/WebApplication/src/gujarat/src/Template/Element/applyonlineresidencial.ctp
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar\gujarat  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\webroot\css\frontend\custom.css  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Controller\MemberController.php  
+Completed: At revision: 871  
+28th-sep
+1) Assign slots array has been modified. Display assign slots one common function has been created.
+2) checking the SMS log for perticular mobile numbers sms gone or not.
+3) shell script log has been checked.
+4) thirdpartyapilog model has been modified for torrent ahmedabad and torrent Surat
+5) Code has been uploaded to demo server.
+6) password_reset table has been created.
+7) Modified date feature has been done for apply online.
+8) otp created date has been added in apply online. Otp calid for 30 minutes code has been added.
+9) Help feni regarding forgot password section.
+
+ALTER TABLE `apply_onlines` ADD `otp_created_date` DATETIME NULL DEFAULT NULL AFTER `otp`;
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar\gujarat  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Model\Table\CustomersTable.php  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Controller\UsersController.php  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\ApplyOnlines\applyonline_list.ctp  
+Completed: At revision: 880  
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar\gujarat  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\ApplyOnlines\index.ctp  
+Completed: At revision: 881  
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar\gujarat  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Model\Table\ApplyonlineMessageTable.php  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Installers\index.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Static\news.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Member\index.ctp  
+Completed: At revision: 886  
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar\gujarat  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\ApplyOnlines\index.ctp  
+Completed: At revision: 887  
+
+29th-Sep (6:30)
+1) Mutiple send mail when application submitted when uploaded signed document has been resolved. uploaded to demo and live and tested.
+2) Mail address has been modified in apply online constoller. Uploaded to demo and live and tested
+3) Hyperlink class has been added when .pdf file uploaded. Code has been uplaoded to live and demo and tested.
+4) Readonly apply to discom, consumer number and division have been added. geda login edit fields have been removed.
+5) remove location fields from apply online.
+
+
+
+Command: Update  
+Updating: D:\xampp\htdocs\nepra\admin  
+Merged: D:\xampp\htdocs\nepra\admin\vendor\composer\autoload_classmap.php  
+Merged: D:\xampp\htdocs\nepra\admin\vendor\composer\autoload_static.php  
+Updated: D:\xampp\htdocs\nepra\admin\app\Models\CompanyMaster.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Models\ViewCompanyProductMaster.php  
+Updated: D:\xampp\htdocs\nepra\admin\app\Models\CompanyCategoryMaster.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Models\CompanyProductQualityParameter.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Models\CompanyProductMaster.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Models\CompanyProductGroup.php  
+Updated: D:\xampp\htdocs\nepra\admin\app\Models\ProductPriceDetail.php  
+Updated: D:\xampp\htdocs\nepra\admin\app\Models\PriceGroupMaster.php  
+Updated: D:\xampp\htdocs\nepra\admin\app\Models\ProductMaster.php  
+Updated: D:\xampp\htdocs\nepra\admin\app\Models\ProductVeriablePriceDetail.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Models\CompanyProductPriceDetail.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Models\CompanyPriceGroupMaster.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Models\CompanyProductVeriablePriceDetail.php  
+Updated: D:\xampp\htdocs\nepra\admin\app\Support\whitelable.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Http\Requests\CompanyPriceGroupUpdate.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Http\Requests\CompanyProductUpdate.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Http\Requests\companycategoryadd.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Http\Requests\CompanyPriceGroupAdd.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Http\Requests\CompanyProductAdd.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Http\Requests\companyCategoryEditRequest.php  
+Added: D:\xampp\htdocs\nepra\admin\app\Http\Requests\companyCategoryAddRequest.php  
+Updated: D:\xampp\htdocs\nepra\admin\Modules\MasterAdmin\Http\Controllers\MasterPriceGroupController.php  
+Updated: D:\xampp\htdocs\nepra\admin\Modules\MasterAdmin\Http\Controllers\MasterProductController.php  
+Updated: D:\xampp\htdocs\nepra\admin\Modules\MasterAdmin\Http\routes.php  
+Added: D:\xampp\htdocs\nepra\admin\Modules\Web\Http\Controllers\CompanyProductMasterController.php  
+Added: D:\xampp\htdocs\nepra\admin\Modules\Web\Http\Controllers\CompanyFranchiseController.php  
+Added: D:\xampp\htdocs\nepra\admin\Modules\Web\Http\Controllers\CompanyCategoryMasterController.php  
+Added: D:\xampp\htdocs\nepra\admin\Modules\Web\Http\Controllers\CompanyPriceGroupMasterController.php  
+Updated: D:\xampp\htdocs\nepra\admin\Modules\Web\Http\routes.php  
+Updated: D:\xampp\htdocs\nepra\admin\resources\lang\hi\message.php  
+Updated: D:\xampp\htdocs\nepra\admin\resources\lang\en\message.php  
+Updated: D:\xampp\htdocs\nepra\admin\resources\lang\gu\message.php  
+Completed: At revision: 303  
+
+1st-Oct
+Ahasolar(3.5 Hours)
+1) Help feni related solved issue in apply online create project section. Guild related installer search.
+2) query sent csv file has been created.
+3) when self cetification uploaded CEI drawing stage would be bypass and when work started then CEI inspection done. uploaded to live and demo and testing done.
+LR (5 Hours)
+1) sync the code and test the code in demo server.
+2) Login as company function has been modified when login from root or login as company as root or franchise.
+3) Franchise list and city list order has been setup when login.
+4) When login as company and franchise not exists and multiple city exist setup has been done.
+
+
+Command: Update  
+Updating: F:\xampp\htdocs\ahasolar\gujarat  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\ApplyOnlines\index.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Element\frontend\footer.ctp  
+Updated: F:\xampp\htdocs\ahasolar\gujarat\src\Template\Element\frontend\header.ctp  
+Completed: At revision: 901  
+
+2nd-Oct
+Ahasolar (7)
+1) Ahasolar august and september month module wise hours calculation has been done.
+2) header, footer code has been compare and uploaded to live server.
+3) google map key constant has been created and update to .ctp file uploaded to demo and live server. Testing has been done.
+4) Apply online listing has been modified for edit application till geda approval.
+5) google map key constant has been placed in member index.ctp file.
+6) Working on instller category validation 85% and 15% of total pv_capacity.
+
+LR (1)
+Working on moving images in company wise from master category images.
+
+ALTER TABLE `fesibility_report`
+CHANGE `estimated_amount` `estimated_amount` decimal(10,2) NULL AFTER `quotation_number`,
+CHANGE `estimated_due_date` `estimated_due_date` date NULL AFTER `estimated_amount`;
+
+3rd-Oct
+Ahasolar(4 Hours)
+1) checking the tno duplicate issue for given application number
+2) Create validation function which check installer capacity Category A and Category B can't submit application above 15% of the allotted capacity of the Category and 85% under Residential
+3) Cron script error has been resolve for feasibility.
+4) query sent and query date excel has been exported.
+5) application listing query in geda and CEI login has been modified.
+6) Shell script regarding charging certificate error has been modified.
+
+LR (4 Hours)
+1) Upload images from category directory to company id wise.
+2) media table has been created and entry in media table has been done.
+3) Update company_category table ref media id.
+
+4th-Oct (5 Hours)
+Ahasolar
+1) Checking the issue in cancelApplicationQuery sent cron on demo and live server.
+2) Feasibility report and api data have been checked in database. Excel file has been exported which contain feasibility table data with api response related that application.
+3) Cancell application status has been done then no button display and insted of query sent application cancelled text has been display - done 
+4) Disucssed how to set button status flag to application listing API. Help regarding download link of pdf files.
+
+LR (3 Hours)
+1) All sql script from 3rd-Sep to till date has been updated.
+2) category inside company has been created according to city wise. City id has been added to media table and coding.
+
+
+
+SELECT fr.id, fr.application_id,sanction_load,
+FROM `fesibility_report` as fr left join thirdparty_api_log as tal on fr.application_id= tal.application_id where response_data like '%get_fr_estimate%' group by tal.application_id
+5th-Oct 
+Ahasolar
+1) 3 application has been revert to last stage which was cancelled on live server.
+2) Cancel application days limit increase to 15 days.
+3) Reopen application by geda feature has been implemented.
+4) Reset application by geda has been implemented.
+5) Feasibility data has been put on apply online listing
+6) Issue of aadhar card hide/show feature in index.ctp has been modified.
+
+
+8th-Oct
+Ahasolar
+1) Application count from dashboard and click on cout it's redirct to apply online listing but pagination not working properly - Issue resolved 
+2) Application submitted also shows cancel application - Solved in listing and dashcoard count blocks
+3) Document verification pending count display on dashboad and clicks on it display selected stage on listing page.
+4) Send message and Assign to Subdivision remove if application cancelled done.
+5) Latitude and longitude taken from projects code has been done. Sql update has been done for apply online latitude and longitude fields from project table.
+6) Making excel file from query and all data from select query exported to excel.
+
+update `apply_onlines` set lattitue=(select latitude from projects where id=apply_onlines.project_id) where lattitue is NULL
+update `apply_onlines` set lattitue=(select CAST(latitude As CHAR) from projects where id=apply_onlines.project_id) where lattitue is NULL
+
+
+update `apply_onlines` set longitude=(select longitude from projects where id=apply_onlines.project_id)
+update `apply_onlines` set longitude=(select CAST(longitude As CHAR) from projects where id=apply_onlines.project_id) where longitude is NULL
+
+Solex Energy Ltd.                 - 202,367,377
+Kanoda Energy Systems Pvt. Ltd.   - 88
+Sanelite Solar Pvt. Ltd.          - 2101
+Akshar Enterprise                 - 1990
+Goldi Green Technologies Pvt. Ltd.- 315
+Sunfree Energy                    - 29
+
+update `apply_onlines` set net_meter='1' WHERE `net_meter` = '0'
+update `apply_onlines` set net_meter=1 WHERE `net_meter` is NULL
+
+update `apply_onlines` set transmission_line='1' WHERE `transmission_line` = '0'
+
+
+Solex Energy Ltd.
+
+SELECT ao.id,ao.created,INS.installer_name,IF ((CASE WHEN 1=1 THEN (
+                SELECT COUNT(0) AS CNT
+                FROM applyonlin_docs
+                WHERE applyonlin_docs.application_id = ao.id
+                AND applyonlin_docs.doc_type = 'profile' 
+) END) = 1, 'Yes', 'No') AS Profile_Photo,(CASE WHEN 1=1 THEN (
+                SELECT COUNT(0) AS CNT
+                FROM apply_onlines_errors_log
+                WHERE apply_onlines_errors_log.application_id = ao.id
+) END) AS count_error FROM `apply_onlines` as ao INNER JOIN installers as INS ON INS.id = ao.installer_id  WHERE `application_status` not IN ('99','29','30','22')  order by Profile_Photo asc
