@@ -1,0 +1,35 @@
+User-agent: *
+
+Allow: /
+
+Disallow: /cgi-bin
+
+Disallow: /chosen
+
+Disallow: /ckeditor
+
+Disallow: /css
+
+Disallow: /data
+
+Disallow: /img  
+
+Disallow: /js
+
+Disallow: /INSTALLER_TERMS_PATH343
+
+Disallow: /pdf
+
+Disallow: /plugins
+
+Disallow: /SITE_SURVEY_PATHplace_battery
+
+Disallow: /SITE_SURVEY_PATHplace_inverter
+
+Disallow: /test
+
+Disallow: /tmp
+
+Disallow: /vendor
+
+Disallow: /debug_kit
